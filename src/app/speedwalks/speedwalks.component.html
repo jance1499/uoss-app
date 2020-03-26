@@ -1,5 +1,11 @@
-<ngb-alert type="success" *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true">Link copied!</ngb-alert>
-
+<div class="fixed-top">
+  <ngb-alert
+    type="success"
+    *ngIf="!staticAlertClosed"
+    (close)="staticAlertClosed = true"
+    >Link copied!</ngb-alert
+  >
+</div>
 <form>
   <div class="form-group row">
     <label for="inputSearch" class="col-sm-1 col-form-label m-3">Search</label>
