@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SpeedwalksComponent } from './speedwalks/speedwalks.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { ClipboardModule } from 'ngx-clipboard';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,7 +30,8 @@ const appRoutes: Routes = [
       appRoutes
     ),
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
