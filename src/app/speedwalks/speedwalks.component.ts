@@ -14,12 +14,17 @@ export class SpeedwalksComponent implements OnInit {
   faCopy = faCopy;
   speedwalks = SPEEDWALKS;
 
+  staticAlertClosed = true;
+
   constructor(private _clipboardService: ClipboardService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   onCopy(directions: string[]): void {
     let text = directions.join(";");
     this._clipboardService.copyFromContent(text);
+    this.staticAlertClosed = false
+    setTimeout(() => this.staticAlertClosed = true, 2000);
   }
 }
