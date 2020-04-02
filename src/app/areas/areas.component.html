@@ -1,7 +1,6 @@
-<table class="table table-bordered table-sm table-dark table-hover">
+<table class="table table-bordered table-hover m-3">
     <thead>
         <tr>
-            <th scope="col">#</th>
             <th scope="col">Area Name</th>
             <th scope="col">Realm</th>
             <th scope="col">MinXP</th>
@@ -10,7 +9,6 @@
     </thead>
     <tbody *ngFor="let area of areas">
             <tr>
-                <th scope="row">{{area.Id}}</th>    
                 <td>{{area.Area}}</td>    
                 <td>{{area.Realm}}</td>
                 <td>{{area.MinXP}}</td>

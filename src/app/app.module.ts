@@ -10,6 +10,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AreasService } from './areas/areas.service';
 import { AreasComponent } from './areas/areas.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClipboardModule } from 'ngx-clipboard';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,16 +32,16 @@ const appRoutes: Routes = [
     AreasComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes
-    ),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ClipboardModule,
+    NgbModule
   ],
   providers: [
     AreasService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
