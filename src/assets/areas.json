@@ -1,0 +1,1569 @@
+[{
+	"Id": 1,
+	"Area": "Albrook",
+	"Realm": "FF6",
+	"MinXP": 4925,
+	"MaxXP": 5935,
+	"isGenerator": ""
+}, {
+	"Id": 2,
+	"Area": "Albrook Overland",
+	"Realm": "FF6",
+	"MinXP": 2000,
+	"MaxXP": 2922,
+	"isGenerator": "generator"
+}, {
+	"Id": 3,
+	"Area": "Ancient Castle",
+	"Realm": "FF6",
+	"MinXP": 24000,
+	"MaxXP": 96258,
+	"isGenerator": "generator"
+}, {
+	"Id": 4,
+	"Area": "Ancient Caves",
+	"Realm": "FF6",
+	"MinXP": 39099,
+	"MaxXP": 43605,
+	"isGenerator": "generator"
+}, {
+	"Id": 5,
+	"Area": "Ancient Forest",
+	"Realm": "FF7",
+	"MinXP": 19692,
+	"MaxXP": 31350,
+	"isGenerator": ""
+}, {
+	"Id": 6,
+	"Area": "Arris Dome Basement",
+	"Realm": "CT",
+	"MinXP": 905,
+	"MaxXP": 1100,
+	"isGenerator": ""
+}, {
+	"Id": 7,
+	"Area": "Bal Castle",
+	"Realm": "FF5",
+	"MinXP": 12633,
+	"MaxXP": 14280,
+	"isGenerator": ""
+}, {
+	"Id": 8,
+	"Area": "Barren Lands",
+	"Realm": "FF6",
+	"MinXP": 26622,
+	"MaxXP": 27200,
+	"isGenerator": "generator"
+}, {
+	"Id": 9,
+	"Area": "Big Bridge",
+	"Realm": "FF5",
+	"MinXP": 7194,
+	"MaxXP": 8678,
+	"isGenerator": ""
+}, {
+	"Id": 10,
+	"Area": "Black Omen",
+	"Realm": "CT",
+	"MinXP": 78805,
+	"MaxXP": 120965,
+	"isGenerator": ""
+}, {
+	"Id": 11,
+	"Area": "Bone Village",
+	"Realm": "FF7",
+	"MinXP": 7300,
+	"MaxXP": 7300,
+	"isGenerator": ""
+}, {
+	"Id": 12,
+	"Area": "Bone Village Overland",
+	"Realm": "FF7",
+	"MinXP": 10200,
+	"MaxXP": 13000,
+	"isGenerator": "generator"
+}, {
+	"Id": 13,
+	"Area": "Cargo Ship",
+	"Realm": "FF7",
+	"MinXP": 2298,
+	"MaxXP": 2583,
+	"isGenerator": ""
+}, {
+	"Id": 14,
+	"Area": "Carwen",
+	"Realm": "FF5",
+	"MinXP": 2590,
+	"MaxXP": 2590,
+	"isGenerator": ""
+}, {
+	"Id": 15,
+	"Area": "Cathedral",
+	"Realm": "CT",
+	"MinXP": 446,
+	"MaxXP": 558,
+	"isGenerator": ""
+}, {
+	"Id": 16,
+	"Area": "Cave of the White Dragon",
+	"Realm": "SoM",
+	"MinXP": 2034,
+	"MaxXP": 2298,
+	"isGenerator": ""
+}, {
+	"Id": 17,
+	"Area": "Cave to the Sealed Gate",
+	"Realm": "FF6",
+	"MinXP": 5068,
+	"MaxXP": 5105,
+	"isGenerator": ""
+}, {
+	"Id": 18,
+	"Area": "Choras Northern Ruins",
+	"Realm": "CT",
+	"MinXP": 50300,
+	"MaxXP": 55875,
+	"isGenerator": ""
+}, {
+	"Id": 19,
+	"Area": "Corel Overland",
+	"Realm": "FF7",
+	"MinXP": 1900,
+	"MaxXP": 4738,
+	"isGenerator": "generator"
+}, {
+	"Id": 20,
+	"Area": "Corel Prison",
+	"Realm": "FF7",
+	"MinXP": 3250,
+	"MaxXP": 4550,
+	"isGenerator": ""
+}, {
+	"Id": 21,
+	"Area": "Cosmo Canyon",
+	"Realm": "FF7",
+	"MinXP": 2500,
+	"MaxXP": 2500,
+	"isGenerator": ""
+}, {
+	"Id": 22,
+	"Area": "Cosmo Canyon Overland",
+	"Realm": "FF7",
+	"MinXP": 3522,
+	"MaxXP": 6105,
+	"isGenerator": "generator"
+}, {
+	"Id": 23,
+	"Area": "Costa Overland",
+	"Realm": "FF7",
+	"MinXP": 1900,
+	"MaxXP": 3000,
+	"isGenerator": "generator"
+}, {
+	"Id": 24,
+	"Area": "Costa del Sol",
+	"Realm": "FF7",
+	"MinXP": 1650,
+	"MaxXP": 2100,
+	"isGenerator": ""
+}, {
+	"Id": 25,
+	"Area": "Crescent Overland",
+	"Realm": "FF5",
+	"MinXP": 3929,
+	"MaxXP": 5800,
+	"isGenerator": "generator"
+}, {
+	"Id": 26,
+	"Area": "Crescent Town",
+	"Realm": "FF5",
+	"MinXP": 3600,
+	"MaxXP": 4300,
+	"isGenerator": ""
+}, {
+	"Id": 27,
+	"Area": "Cursed Woods",
+	"Realm": "CT",
+	"MinXP": 2500,
+	"MaxXP": 2800,
+	"isGenerator": ""
+}, {
+	"Id": 28,
+	"Area": "Dactyl Nest",
+	"Realm": "CT",
+	"MinXP": 9400,
+	"MaxXP": 9999,
+	"isGenerator": ""
+}, {
+	"Id": 29,
+	"Area": "Daryl's Tomb",
+	"Realm": "FF6",
+	"MinXP": 11000,
+	"MaxXP": 11444,
+	"isGenerator": ""
+}, {
+	"Id": 30,
+	"Area": "Death Peak",
+	"Realm": "CT",
+	"MinXP": 32555,
+	"MaxXP": 36350,
+	"isGenerator": ""
+}, {
+	"Id": 31,
+	"Area": "Denadoro Mountain",
+	"Realm": "CT",
+	"MinXP": 1550,
+	"MaxXP": 2700,
+	"isGenerator": ""
+}, {
+	"Id": 32,
+	"Area": "Dinosaur Forest",
+	"Realm": "FF6",
+	"MinXP": 113405,
+	"MaxXP": 113405,
+	"isGenerator": ""
+}, {
+	"Id": 33,
+	"Area": "Doma Castle",
+	"Realm": "FF6",
+	"MinXP": 1500,
+	"MaxXP": 3000,
+	"isGenerator": ""
+}, {
+	"Id": 34,
+	"Area": "Doma Imperial Camp",
+	"Realm": "FF6",
+	"MinXP": 995,
+	"MaxXP": 1300,
+	"isGenerator": ""
+}, {
+	"Id": 35,
+	"Area": "Doma Overland",
+	"Realm": "FF6",
+	"MinXP": 900,
+	"MaxXP": 1128,
+	"isGenerator": "generator"
+}, {
+	"Id": 36,
+	"Area": "Don Corneo's Mansion",
+	"Realm": "FF7",
+	"MinXP": 905,
+	"MaxXP": 905,
+	"isGenerator": ""
+}, {
+	"Id": 37,
+	"Area": "Dorino",
+	"Realm": "CT",
+	"MinXP": 1749,
+	"MaxXP": 2410,
+	"isGenerator": ""
+}, {
+	"Id": 38,
+	"Area": "Dwarven Village",
+	"Realm": "SoM",
+	"MinXP": 399,
+	"MaxXP": 399,
+	"isGenerator": ""
+}, {
+	"Id": 39,
+	"Area": "Ebot's Rock",
+	"Realm": "FF6",
+	"MinXP": 13864,
+	"MaxXP": 15654,
+	"isGenerator": ""
+}, {
+	"Id": 40,
+	"Area": "Elinee's Castle",
+	"Realm": "SoM",
+	"MinXP": 220,
+	"MaxXP": 446,
+	"isGenerator": ""
+}, {
+	"Id": 41,
+	"Area": "Elsendor",
+	"Realm": "Oth",
+	"MinXP": 190,
+	"MaxXP": 240,
+	"isGenerator": ""
+}, {
+	"Id": 42,
+	"Area": "Enhasa",
+	"Realm": "CT",
+	"MinXP": 13500,
+	"MaxXP": 15200,
+	"isGenerator": ""
+}, {
+	"Id": 43,
+	"Area": "Fanatics' Tower",
+	"Realm": "FF6",
+	"MinXP": 52098,
+	"MaxXP": 93153,
+	"isGenerator": ""
+}, {
+	"Id": 44,
+	"Area": "Figaro Castle",
+	"Realm": "FF6",
+	"MinXP": 255,
+	"MaxXP": 342,
+	"isGenerator": ""
+}, {
+	"Id": 45,
+	"Area": "Figaro Castle Engine Room",
+	"Realm": "FF6",
+	"MinXP": 2700,
+	"MaxXP": 3200,
+	"isGenerator": ""
+}, {
+	"Id": 46,
+	"Area": "Figaro Desert",
+	"Realm": "FF6",
+	"MinXP": 8000,
+	"MaxXP": 9000,
+	"isGenerator": ""
+}, {
+	"Id": 47,
+	"Area": "Fire Palace",
+	"Realm": "SoM",
+	"MinXP": 4738,
+	"MaxXP": 6133,
+	"isGenerator": ""
+}, {
+	"Id": 48,
+	"Area": "Forest Maze",
+	"Realm": "CT",
+	"MinXP": 3400,
+	"MaxXP": 4550,
+	"isGenerator": ""
+}, {
+	"Id": 49,
+	"Area": "Forgotten City",
+	"Realm": "FF7",
+	"MinXP": 12100,
+	"MaxXP": 13000,
+	"isGenerator": ""
+}, {
+	"Id": 50,
+	"Area": "Gaea's Cliff",
+	"Realm": "FF7",
+	"MinXP": 4322,
+	"MaxXP": 36471,
+	"isGenerator": ""
+}, {
+	"Id": 51,
+	"Area": "Gaia's Navel Caves",
+	"Realm": "SoM",
+	"MinXP": 113,
+	"MaxXP": 200,
+	"isGenerator": ""
+}, {
+	"Id": 52,
+	"Area": "Gaia's Navel Fields",
+	"Realm": "SoM",
+	"MinXP": 27,
+	"MaxXP": 87,
+	"isGenerator": ""
+}, {
+	"Id": 53,
+	"Area": "Gelnika",
+	"Realm": "FF7",
+	"MinXP": 61810,
+	"MaxXP": 68734,
+	"isGenerator": ""
+}, {
+	"Id": 54,
+	"Area": "Geno Dome",
+	"Realm": "CT",
+	"MinXP": 30189,
+	"MaxXP": 42048,
+	"isGenerator": ""
+}, {
+	"Id": 55,
+	"Area": "Gi Caves",
+	"Realm": "FF7",
+	"MinXP": 4955,
+	"MaxXP": 6650,
+	"isGenerator": "generator"
+}, {
+	"Id": 56,
+	"Area": "Giant's Claw",
+	"Realm": "CT",
+	"MinXP": 30100,
+	"MaxXP": 37700,
+	"isGenerator": ""
+}, {
+	"Id": 57,
+	"Area": "Goblin Island",
+	"Realm": "FF7",
+	"MinXP": 25000,
+	"MaxXP": 25000,
+	"isGenerator": "generator"
+}, {
+	"Id": 58,
+	"Area": "Goblin Village",
+	"Realm": "SoM",
+	"MinXP": 686,
+	"MaxXP": 870,
+	"isGenerator": ""
+}, {
+	"Id": 59,
+	"Area": "Gold City",
+	"Realm": "SoM",
+	"MinXP": 9657,
+	"MaxXP": 10348,
+	"isGenerator": ""
+}, {
+	"Id": 60,
+	"Area": "Gongaga",
+	"Realm": "FF7",
+	"MinXP": 3522,
+	"MaxXP": 4359,
+	"isGenerator": ""
+}, {
+	"Id": 61,
+	"Area": "Gongaga Overland",
+	"Realm": "FF7",
+	"MinXP": 1900,
+	"MaxXP": 4262,
+	"isGenerator": "generator"
+}, {
+	"Id": 62,
+	"Area": "Great Forest",
+	"Realm": "SoM",
+	"MinXP": 1561,
+	"MaxXP": 2034,
+	"isGenerator": ""
+}, {
+	"Id": 63,
+	"Area": "Great Glacier",
+	"Realm": "FF7",
+	"MinXP": 10000,
+	"MaxXP": 18000,
+	"isGenerator": ""
+}, {
+	"Id": 64,
+	"Area": "Guardia Castle Dungeon",
+	"Realm": "CT",
+	"MinXP": 450,
+	"MaxXP": 450,
+	"isGenerator": ""
+}, {
+	"Id": 65,
+	"Area": "Guardia Castle, 1000 AD",
+	"Realm": "CT",
+	"MinXP": 350,
+	"MaxXP": 450,
+	"isGenerator": ""
+}, {
+	"Id": 66,
+	"Area": "Guardia Castle, 600 AD",
+	"Realm": "CT",
+	"MinXP": 348,
+	"MaxXP": 500,
+	"isGenerator": ""
+}, {
+	"Id": 67,
+	"Area": "Guardia Forest, 1000 AD",
+	"Realm": "CT",
+	"MinXP": 18,
+	"MaxXP": 18,
+	"isGenerator": ""
+}, {
+	"Id": 68,
+	"Area": "Guardia Forest, 600 AD",
+	"Realm": "CT",
+	"MinXP": 130,
+	"MaxXP": 130,
+	"isGenerator": ""
+}, {
+	"Id": 69,
+	"Area": "Haunted Forest",
+	"Realm": "SoM",
+	"MinXP": 113,
+	"MaxXP": 220,
+	"isGenerator": ""
+}, {
+	"Id": 70,
+	"Area": "Heckran's Cave",
+	"Realm": "CT",
+	"MinXP": 1900,
+	"MaxXP": 2165,
+	"isGenerator": ""
+}, {
+	"Id": 71,
+	"Area": "Hunting Range",
+	"Realm": "CT",
+	"MinXP": 3742,
+	"MaxXP": 4527,
+	"isGenerator": ""
+}, {
+	"Id": 72,
+	"Area": "Ice Forest",
+	"Realm": "SoM",
+	"MinXP": 2298,
+	"MaxXP": 4738,
+	"isGenerator": ""
+}, {
+	"Id": 73,
+	"Area": "Ice Palace",
+	"Realm": "SoM",
+	"MinXP": 4322,
+	"MaxXP": 5643,
+	"isGenerator": ""
+}, {
+	"Id": 74,
+	"Area": "Icicle Inn",
+	"Realm": "FF7",
+	"MinXP": 9000,
+	"MaxXP": 13425,
+	"isGenerator": ""
+}, {
+	"Id": 75,
+	"Area": "Icicle Overland",
+	"Realm": "FF7",
+	"MinXP": 9400,
+	"MaxXP": 13000,
+	"isGenerator": "generator"
+}, {
+	"Id": 76,
+	"Area": "Illusionary Forest",
+	"Realm": "CT",
+	"MinXP": 300,
+	"MaxXP": 300,
+	"isGenerator": ""
+}, {
+	"Id": 77,
+	"Area": "Imperial Observation Post",
+	"Realm": "FF6",
+	"MinXP": 3550,
+	"MaxXP": 4670,
+	"isGenerator": ""
+}, {
+	"Id": 78,
+	"Area": "Ioka Village",
+	"Realm": "CT",
+	"MinXP": 3400,
+	"MaxXP": 3750,
+	"isGenerator": ""
+}, {
+	"Id": 79,
+	"Area": "Istory",
+	"Realm": "FF5",
+	"MinXP": 4322,
+	"MaxXP": 5407,
+	"isGenerator": ""
+}, {
+	"Id": 80,
+	"Area": "Istory Overland",
+	"Realm": "FF5",
+	"MinXP": 32120,
+	"MaxXP": 36700,
+	"isGenerator": "generator"
+}, {
+	"Id": 81,
+	"Area": "Jachol Cave",
+	"Realm": "FF5",
+	"MinXP": 112650,
+	"MaxXP": 112650,
+	"isGenerator": ""
+}, {
+	"Id": 82,
+	"Area": "Jidoor",
+	"Realm": "FF6",
+	"MinXP": 190,
+	"MaxXP": 905,
+	"isGenerator": ""
+}, {
+	"Id": 83,
+	"Area": "Jidoor Overland",
+	"Realm": "FF6",
+	"MinXP": 59660,
+	"MaxXP": 88350,
+	"isGenerator": "generator"
+}, {
+	"Id": 84,
+	"Area": "Junon Overland",
+	"Realm": "FF7",
+	"MinXP": 1700,
+	"MaxXP": 2700,
+	"isGenerator": "generator"
+}, {
+	"Id": 85,
+	"Area": "Kajar",
+	"Realm": "CT",
+	"MinXP": 15200,
+	"MaxXP": 16100,
+	"isGenerator": ""
+}, {
+	"Id": 86,
+	"Area": "Kakkara Desert",
+	"Realm": "SoM",
+	"MinXP": 2887,
+	"MaxXP": 3560,
+	"isGenerator": "generator"
+}, {
+	"Id": 87,
+	"Area": "Kakkara Town",
+	"Realm": "SoM",
+	"MinXP": 700,
+	"MaxXP": 800,
+	"isGenerator": ""
+}, {
+	"Id": 88,
+	"Area": "Kalm",
+	"Realm": "FF7",
+	"MinXP": 5500,
+	"MaxXP": 14000,
+	"isGenerator": ""
+}, {
+	"Id": 89,
+	"Area": "Kalm Overland",
+	"Realm": "FF7",
+	"MinXP": 900,
+	"MaxXP": 1400,
+	"isGenerator": "generator"
+}, {
+	"Id": 90,
+	"Area": "Karnak",
+	"Realm": "FF5",
+	"MinXP": 2728,
+	"MaxXP": 3160,
+	"isGenerator": ""
+}, {
+	"Id": 91,
+	"Area": "Karnak Castle",
+	"Realm": "FF5",
+	"MinXP": 4300,
+	"MaxXP": 5407,
+	"isGenerator": ""
+}, {
+	"Id": 92,
+	"Area": "Karnak Overland",
+	"Realm": "FF5",
+	"MinXP": 2500,
+	"MaxXP": 4300,
+	"isGenerator": "generator"
+}, {
+	"Id": 93,
+	"Area": "Kippo",
+	"Realm": "SoM",
+	"MinXP": 67,
+	"MaxXP": 108,
+	"isGenerator": ""
+}, {
+	"Id": 94,
+	"Area": "Kohlingen",
+	"Realm": "FF6",
+	"MinXP": 1300,
+	"MaxXP": 2300,
+	"isGenerator": ""
+}, {
+	"Id": 95,
+	"Area": "Kohlingen Overland",
+	"Realm": "FF6",
+	"MinXP": 9110,
+	"MaxXP": 10640,
+	"isGenerator": "generator"
+}, {
+	"Id": 96,
+	"Area": "Lab 16",
+	"Realm": "CT",
+	"MinXP": 620,
+	"MaxXP": 830,
+	"isGenerator": ""
+}, {
+	"Id": 97,
+	"Area": "Lab 32",
+	"Realm": "CT",
+	"MinXP": 2038,
+	"MaxXP": 2692,
+	"isGenerator": ""
+}, {
+	"Id": 98,
+	"Area": "Last Village",
+	"Realm": "CT",
+	"MinXP": 27950,
+	"MaxXP": 27950,
+	"isGenerator": ""
+}, {
+	"Id": 99,
+	"Area": "Lete Underground River",
+	"Realm": "FF6",
+	"MinXP": 1523,
+	"MaxXP": 1725,
+	"isGenerator": ""
+}, {
+	"Id": 100,
+	"Area": "Library of Ancients",
+	"Realm": "FF5",
+	"MinXP": 4100,
+	"MaxXP": 4600,
+	"isGenerator": ""
+}, {
+	"Id": 101,
+	"Area": "Light Palace",
+	"Realm": "SoM",
+	"MinXP": 13000,
+	"MaxXP": 14298,
+	"isGenerator": ""
+}, {
+	"Id": 102,
+	"Area": "Lix",
+	"Realm": "FF5",
+	"MinXP": 6650,
+	"MaxXP": 7766,
+	"isGenerator": ""
+}, {
+	"Id": 103,
+	"Area": "Lofty Mountains",
+	"Realm": "SoM",
+	"MinXP": 11071,
+	"MaxXP": 12615,
+	"isGenerator": ""
+}, {
+	"Id": 104,
+	"Area": "Lower Junon",
+	"Realm": "FF7",
+	"MinXP": 2400,
+	"MaxXP": 2900,
+	"isGenerator": ""
+}, {
+	"Id": 105,
+	"Area": "Lunar Subterrane",
+	"Realm": "Oth",
+	"MinXP": 141725,
+	"MaxXP": 263750,
+	"isGenerator": ""
+}, {
+	"Id": 106,
+	"Area": "Magic Cave",
+	"Realm": "CT",
+	"MinXP": 2434,
+	"MaxXP": 2438,
+	"isGenerator": ""
+}, {
+	"Id": 107,
+	"Area": "Magitek Factory",
+	"Realm": "FF6",
+	"MinXP": 3498,
+	"MaxXP": 3856,
+	"isGenerator": ""
+}, {
+	"Id": 108,
+	"Area": "Magus' Castle",
+	"Realm": "CT",
+	"MinXP": 2434,
+	"MaxXP": 5200,
+	"isGenerator": ""
+}, {
+	"Id": 109,
+	"Area": "Mana Fortress",
+	"Realm": "SoM",
+	"MinXP": 16124,
+	"MaxXP": 78805,
+	"isGenerator": ""
+}, {
+	"Id": 110,
+	"Area": "Mandala",
+	"Realm": "SoM",
+	"MinXP": 9600,
+	"MaxXP": 12000,
+	"isGenerator": ""
+}, {
+	"Id": 111,
+	"Area": "Maranda",
+	"Realm": "FF6",
+	"MinXP": 4275,
+	"MaxXP": 5000,
+	"isGenerator": ""
+}, {
+	"Id": 112,
+	"Area": "Matango",
+	"Realm": "SoM",
+	"MinXP": 2700,
+	"MaxXP": 3047,
+	"isGenerator": ""
+}, {
+	"Id": 113,
+	"Area": "Medina Village, 1000AD",
+	"Realm": "CT",
+	"MinXP": 60,
+	"MaxXP": 60,
+	"isGenerator": ""
+}, {
+	"Id": 114,
+	"Area": "Mideel",
+	"Realm": "FF7",
+	"MinXP": 905,
+	"MaxXP": 1400,
+	"isGenerator": ""
+}, {
+	"Id": 115,
+	"Area": "Mideel Overland",
+	"Realm": "FF7",
+	"MinXP": 17100,
+	"MaxXP": 21300,
+	"isGenerator": "generator"
+}, {
+	"Id": 116,
+	"Area": "Midgar Sector 5",
+	"Realm": "FF7",
+	"MinXP": 410,
+	"MaxXP": 682,
+	"isGenerator": ""
+}, {
+	"Id": 117,
+	"Area": "Midgar Sector 6 Ruins",
+	"Realm": "FF7",
+	"MinXP": 314,
+	"MaxXP": 338,
+	"isGenerator": ""
+}, {
+	"Id": 118,
+	"Area": "Midgar Sector 6 Wire",
+	"Realm": "FF7",
+	"MinXP": 1575,
+	"MaxXP": 1575,
+	"isGenerator": ""
+}, {
+	"Id": 119,
+	"Area": "Midgar Sewers",
+	"Realm": "FF7",
+	"MinXP": 828,
+	"MaxXP": 905,
+	"isGenerator": ""
+}, {
+	"Id": 120,
+	"Area": "Midgar Tunnels",
+	"Realm": "FF7",
+	"MinXP": 43605,
+	"MaxXP": 52100,
+	"isGenerator": ""
+}, {
+	"Id": 121,
+	"Area": "Millenial Fair",
+	"Realm": "CT",
+	"MinXP": 50,
+	"MaxXP": 85,
+	"isGenerator": ""
+}, {
+	"Id": 122,
+	"Area": "Mirage",
+	"Realm": "FF5",
+	"MinXP": 25000,
+	"MaxXP": 25425,
+	"isGenerator": ""
+}, {
+	"Id": 123,
+	"Area": "Mobliz",
+	"Realm": "FF6",
+	"MinXP": 1860,
+	"MaxXP": 1860,
+	"isGenerator": ""
+}, {
+	"Id": 124,
+	"Area": "Moogle Village",
+	"Realm": "SoM",
+	"MinXP": 190,
+	"MaxXP": 190,
+	"isGenerator": ""
+}, {
+	"Id": 125,
+	"Area": "Moon Palace",
+	"Realm": "SoM",
+	"MinXP": 15103,
+	"MaxXP": 15103,
+	"isGenerator": ""
+}, {
+	"Id": 126,
+	"Area": "Moore",
+	"Realm": "FF5",
+	"MinXP": 7194,
+	"MaxXP": 7766,
+	"isGenerator": ""
+}, {
+	"Id": 127,
+	"Area": "Mt. Corel",
+	"Realm": "FF7",
+	"MinXP": 2583,
+	"MaxXP": 3950,
+	"isGenerator": ""
+}, {
+	"Id": 128,
+	"Area": "Mt. Da-Chao",
+	"Realm": "FF7",
+	"MinXP": "F7",
+	"MaxXP": "7        1400",
+	"isGenerator": ""
+}, {
+	"Id": 129,
+	"Area": "Mt. Nibel",
+	"Realm": "FF7",
+	"MinXP": 6600,
+	"MaxXP": 8000,
+	"isGenerator": ""
+}, {
+	"Id": 130,
+	"Area": "Mt. Zozo",
+	"Realm": "FF6",
+	"MinXP": 12540,
+	"MaxXP": 17094,
+	"isGenerator": "generator"
+}, {
+	"Id": 131,
+	"Area": "Mystic Mountain",
+	"Realm": "CT",
+	"MinXP": 3000,
+	"MaxXP": 3380,
+	"isGenerator": ""
+}, {
+	"Id": 132,
+	"Area": "Mythril Mines",
+	"Realm": "FF7",
+	"MinXP": 2298,
+	"MaxXP": 3560,
+	"isGenerator": ""
+}, {
+	"Id": 133,
+	"Area": "Narshe",
+	"Realm": "FF6",
+	"MinXP": 130,
+	"MaxXP": 200,
+	"isGenerator": ""
+}, {
+	"Id": 134,
+	"Area": "Narshe Mines",
+	"Realm": "FF6",
+	"MinXP": 226,
+	"MaxXP": 226,
+	"isGenerator": ""
+}, {
+	"Id": 135,
+	"Area": "Narshe Overland",
+	"Realm": "FF6",
+	"MinXP": 225,
+	"MaxXP": 225,
+	"isGenerator": ""
+}, {
+	"Id": 136,
+	"Area": "Nibelheim",
+	"Realm": "FF7",
+	"MinXP": 4080,
+	"MaxXP": 6120,
+	"isGenerator": ""
+}, {
+	"Id": 137,
+	"Area": "Nibelheim Mansion",
+	"Realm": "FF7",
+	"MinXP": 9600,
+	"MaxXP": 11382,
+	"isGenerator": ""
+}, {
+	"Id": 138,
+	"Area": "Nibelheim Overland",
+	"Realm": "FF7",
+	"MinXP": 6105,
+	"MaxXP": 6912,
+	"isGenerator": "generator"
+}, {
+	"Id": 139,
+	"Area": "Nikeah",
+	"Realm": "FF6",
+	"MinXP": 4300,
+	"MaxXP": 5250,
+	"isGenerator": ""
+}, {
+	"Id": 140,
+	"Area": "North Corel",
+	"Realm": "FF7",
+	"MinXP": 1800,
+	"MaxXP": 1800,
+	"isGenerator": ""
+}, {
+	"Id": 141,
+	"Area": "North Mountain",
+	"Realm": "FF5",
+	"MinXP": 1460,
+	"MaxXP": 1550,
+	"isGenerator": ""
+}, {
+	"Id": 142,
+	"Area": "Northern Crater",
+	"Realm": "FF7",
+	"MinXP": 32500,
+	"MaxXP": 488647,
+	"isGenerator": ""
+}, {
+	"Id": 143,
+	"Area": "Northtown",
+	"Realm": "SoM",
+	"MinXP": 2500,
+	"MaxXP": 3902,
+	"isGenerator": ""
+}, {
+	"Id": 144,
+	"Area": "Northtown Castle",
+	"Realm": "SoM",
+	"MinXP": 9000,
+	"MaxXP": 13000,
+	"isGenerator": ""
+}, {
+	"Id": 145,
+	"Area": "Northtown Ruins",
+	"Realm": "SoM",
+	"MinXP": 6133,
+	"MaxXP": 11071,
+	"isGenerator": ""
+}, {
+	"Id": 146,
+	"Area": "Ocean Palace",
+	"Realm": "CT",
+	"MinXP": 21400,
+	"MaxXP": 30100,
+	"isGenerator": ""
+}, {
+	"Id": 147,
+	"Area": "Opera House",
+	"Realm": "FF6",
+	"MinXP": 9650,
+	"MaxXP": 9650,
+	"isGenerator": ""
+}, {
+	"Id": 148,
+	"Area": "Owzer's Mansion",
+	"Realm": "FF6",
+	"MinXP": 14500,
+	"MaxXP": 17500,
+	"isGenerator": ""
+}, {
+	"Id": 149,
+	"Area": "Pandora",
+	"Realm": "SoM",
+	"MinXP": 150,
+	"MaxXP": 500,
+	"isGenerator": ""
+}, {
+	"Id": 150,
+	"Area": "Pandora Castle",
+	"Realm": "SoM",
+	"MinXP": 1300,
+	"MaxXP": 1500,
+	"isGenerator": ""
+}, {
+	"Id": 151,
+	"Area": "Pandora Ruins",
+	"Realm": "SoM",
+	"MinXP": 986,
+	"MaxXP": 1160,
+	"isGenerator": ""
+}, {
+	"Id": 152,
+	"Area": "Phantom Forest",
+	"Realm": "FF6",
+	"MinXP": 900,
+	"MaxXP": 1200,
+	"isGenerator": ""
+}, {
+	"Id": 153,
+	"Area": "Phantom Train",
+	"Realm": "FF6",
+	"MinXP": 650,
+	"MaxXP": 1420,
+	"isGenerator": ""
+}, {
+	"Id": 154,
+	"Area": "Phoenix Cave",
+	"Realm": "FF6",
+	"MinXP": 36357,
+	"MaxXP": 57880,
+	"isGenerator": "generator"
+}, {
+	"Id": 155,
+	"Area": "Phoenix Overland",
+	"Realm": "FF5",
+	"MinXP": 19714,
+	"MaxXP": 28971,
+	"isGenerator": "generator"
+}, {
+	"Id": 156,
+	"Area": "Phoenix Tower",
+	"Realm": "FF5",
+	"MinXP": 57880,
+	"MaxXP": 57880,
+	"isGenerator": ""
+}, {
+	"Id": 157,
+	"Area": "Pirate Cave",
+	"Realm": "FF5",
+	"MinXP": 130,
+	"MaxXP": 140,
+	"isGenerator": ""
+}, {
+	"Id": 158,
+	"Area": "Pirate Lair",
+	"Realm": "FF5",
+	"MinXP": 226,
+	"MaxXP": 226,
+	"isGenerator": ""
+}, {
+	"Id": 159,
+	"Area": "Porre, 600 AD",
+	"Realm": "CT",
+	"MinXP": 1900,
+	"MaxXP": 2560,
+	"isGenerator": ""
+}, {
+	"Id": 160,
+	"Area": "Potos",
+	"Realm": "SoM",
+	"MinXP": 18,
+	"MaxXP": 37,
+	"isGenerator": ""
+}, {
+	"Id": 161,
+	"Area": "Potos Fields",
+	"Realm": "SoM",
+	"MinXP": 10,
+	"MaxXP": 51,
+	"isGenerator": ""
+}, {
+	"Id": 162,
+	"Area": "Proto Factory",
+	"Realm": "CT",
+	"MinXP": 1750,
+	"MaxXP": 10200,
+	"isGenerator": ""
+}, {
+	"Id": 163,
+	"Area": "Pure Land",
+	"Realm": "SoM",
+	"MinXP": 37179,
+	"MaxXP": 52098,
+	"isGenerator": ""
+}, {
+	"Id": 164,
+	"Area": "Quelb",
+	"Realm": "FF5",
+	"MinXP": 3384,
+	"MaxXP": 4527,
+	"isGenerator": ""
+}, {
+	"Id": 165,
+	"Area": "Rabite Field",
+	"Realm": "SoM",
+	"MinXP": 10,
+	"MaxXP": 10,
+	"isGenerator": "generator"
+}, {
+	"Id": 166,
+	"Area": "Reactor 7",
+	"Realm": "FF7",
+	"MinXP": 196,
+	"MaxXP": 560,
+	"isGenerator": ""
+}, {
+	"Id": 167,
+	"Area": "Reptite Lair",
+	"Realm": "CT",
+	"MinXP": 3925,
+	"MaxXP": 4955,
+	"isGenerator": ""
+}, {
+	"Id": 168,
+	"Area": "Rocket Town",
+	"Realm": "FF7",
+	"MinXP": 3700,
+	"MaxXP": 6000,
+	"isGenerator": ""
+}, {
+	"Id": 169,
+	"Area": "Rocket Town Overland",
+	"Realm": "FF7",
+	"MinXP": 6105,
+	"MaxXP": 7340,
+	"isGenerator": "generator"
+}, {
+	"Id": 170,
+	"Area": "Rugor",
+	"Realm": "FF5",
+	"MinXP": 1900,
+	"MaxXP": 2200,
+	"isGenerator": ""
+}, {
+	"Id": 171,
+	"Area": "Sage Joch's Trial",
+	"Realm": "SoM",
+	"MinXP": 10192,
+	"MaxXP": 32000,
+	"isGenerator": "generator"
+}, {
+	"Id": 172,
+	"Area": "Sea Hare Island",
+	"Realm": "SoM",
+	"MinXP": 160,
+	"MaxXP": 250,
+	"isGenerator": ""
+}, {
+	"Id": 173,
+	"Area": "Sealed Castle Kuzar",
+	"Realm": "FF5",
+	"MinXP": 25000,
+	"MaxXP": 25000,
+	"isGenerator": ""
+}, {
+	"Id": 174,
+	"Area": "Serpent Trench",
+	"Realm": "FF6",
+	"MinXP": 7000,
+	"MaxXP": 8300,
+	"isGenerator": "generator"
+}, {
+	"Id": 175,
+	"Area": "Sewer Access",
+	"Realm": "CT",
+	"MinXP": 1100,
+	"MaxXP": 1350,
+	"isGenerator": ""
+}, {
+	"Id": 176,
+	"Area": "Shade Palace",
+	"Realm": "SoM",
+	"MinXP": 9500,
+	"MaxXP": 13023,
+	"isGenerator": ""
+}, {
+	"Id": 177,
+	"Area": "Shifting Desert Overland",
+	"Realm": "FF5",
+	"MinXP": 6333,
+	"MaxXP": 6688,
+	"isGenerator": "generator"
+}, {
+	"Id": 178,
+	"Area": "Shinra Tower",
+	"Realm": "FF7",
+	"MinXP": 3384,
+	"MaxXP": 3484,
+	"isGenerator": ""
+}, {
+	"Id": 179,
+	"Area": "Ship Graveyard",
+	"Realm": "FF5",
+	"MinXP": 1750,
+	"MaxXP": 2100,
+	"isGenerator": ""
+}, {
+	"Id": 180,
+	"Area": "Solitary Island",
+	"Realm": "FF6",
+	"MinXP": 6220,
+	"MaxXP": 11500,
+	"isGenerator": "generator"
+}, {
+	"Id": 181,
+	"Area": "South Figaro",
+	"Realm": "FF6",
+	"MinXP": 3200,
+	"MaxXP": 3600,
+	"isGenerator": ""
+}, {
+	"Id": 182,
+	"Area": "South Figaro Caves",
+	"Realm": "FF6",
+	"MinXP": 1650,
+	"MaxXP": 2250,
+	"isGenerator": ""
+}, {
+	"Id": 183,
+	"Area": "South Figaro Mansion Baseme",
+	"Realm": "FF6",
+	"MinXP": 1000,
+	"MaxXP": 1250,
+	"isGenerator": ""
+}, {
+	"Id": 184,
+	"Area": "Southtown",
+	"Realm": "SoM",
+	"MinXP": 4698,
+	"MaxXP": 5600,
+	"isGenerator": ""
+}, {
+	"Id": 185,
+	"Area": "Southtown Sewers",
+	"Realm": "SoM",
+	"MinXP": 5500,
+	"MaxXP": 6133,
+	"isGenerator": ""
+}, {
+	"Id": 186,
+	"Area": "Sunken Desert",
+	"Realm": "CT",
+	"MinXP": 30200,
+	"MaxXP": 31350,
+	"isGenerator": ""
+}, {
+	"Id": 187,
+	"Area": "Sunken Returners' Hideout",
+	"Realm": "FF6",
+	"MinXP": 1410,
+	"MaxXP": 1561,
+	"isGenerator": ""
+}, {
+	"Id": 188,
+	"Area": "Tasnica",
+	"Realm": "SoM",
+	"MinXP": 12253,
+	"MaxXP": 19334,
+	"isGenerator": ""
+}, {
+	"Id": 189,
+	"Area": "Terra Cave",
+	"Realm": "CT",
+	"MinXP": 17600,
+	"MaxXP": 18100,
+	"isGenerator": ""
+}, {
+	"Id": 190,
+	"Area": "Thamasa",
+	"Realm": "FF6",
+	"MinXP": 3250,
+	"MaxXP": 3250,
+	"isGenerator": ""
+}, {
+	"Id": 191,
+	"Area": "The Blackbird",
+	"Realm": "CT",
+	"MinXP": 30200,
+	"MaxXP": 30200,
+	"isGenerator": ""
+}, {
+	"Id": 192,
+	"Area": "The Moon",
+	"Realm": "Oth",
+	"MinXP": 46900,
+	"MaxXP": 150000,
+	"isGenerator": "generator"
+}, {
+	"Id": 193,
+	"Area": "Todo",
+	"Realm": "SoM",
+	"MinXP": 348,
+	"MaxXP": 348,
+	"isGenerator": ""
+}, {
+	"Id": 194,
+	"Area": "Torna Canal",
+	"Realm": "FF5",
+	"MinXP": 620,
+	"MaxXP": 675,
+	"isGenerator": ""
+}, {
+	"Id": 195,
+	"Area": "Tree Palace",
+	"Realm": "SoM",
+	"MinXP": 3000,
+	"MaxXP": 6700,
+	"isGenerator": ""
+}, {
+	"Id": 196,
+	"Area": "Triangle Island",
+	"Realm": "FF6",
+	"MinXP": 29385,
+	"MaxXP": 35583,
+	"isGenerator": ""
+}, {
+	"Id": 197,
+	"Area": "Truce Canyon",
+	"Realm": "CT",
+	"MinXP": 37,
+	"MaxXP": 51,
+	"isGenerator": ""
+}, {
+	"Id": 198,
+	"Area": "Truce, 600 AD",
+	"Realm": "CT",
+	"MinXP": 87,
+	"MaxXP": 105,
+	"isGenerator": ""
+}, {
+	"Id": 199,
+	"Area": "Tule",
+	"Realm": "FF5",
+	"MinXP": 304,
+	"MaxXP": 450,
+	"isGenerator": ""
+}, {
+	"Id": 200,
+	"Area": "Tule Overland",
+	"Realm": "FF5",
+	"MinXP": 16033,
+	"MaxXP": 21345,
+	"isGenerator": "generator"
+}, {
+	"Id": 201,
+	"Area": "Tycoon Meteor",
+	"Realm": "FF5",
+	"MinXP": 130,
+	"MaxXP": 162,
+	"isGenerator": ""
+}, {
+	"Id": 202,
+	"Area": "Tycoon Overland",
+	"Realm": "FF5",
+	"MinXP": 7549,
+	"MaxXP": 8330,
+	"isGenerator": "generator"
+}, {
+	"Id": 203,
+	"Area": "Tyrano Lair",
+	"Realm": "CT",
+	"MinXP": 9650,
+	"MaxXP": 12615,
+	"isGenerator": ""
+}, {
+	"Id": 204,
+	"Area": "Tzen",
+	"Realm": "FF6",
+	"MinXP": 3800,
+	"MaxXP": 4500,
+	"isGenerator": ""
+}, {
+	"Id": 205,
+	"Area": "Tzen Mansion",
+	"Realm": "FF6",
+	"MinXP": 7766,
+	"MaxXP": 7949,
+	"isGenerator": ""
+}, {
+	"Id": 206,
+	"Area": "Umaro's Cave",
+	"Realm": "FF6",
+	"MinXP": 11642,
+	"MaxXP": 14866,
+	"isGenerator": ""
+}, {
+	"Id": 207,
+	"Area": "Underground Palace",
+	"Realm": "SoM",
+	"MinXP": 620,
+	"MaxXP": 828,
+	"isGenerator": ""
+}, {
+	"Id": 208,
+	"Area": "Underwater Reactor",
+	"Realm": "FF7",
+	"MinXP": 13864,
+	"MaxXP": 22550,
+	"isGenerator": ""
+}, {
+	"Id": 209,
+	"Area": "Undine's Cave",
+	"Realm": "SoM",
+	"MinXP": 620,
+	"MaxXP": 620,
+	"isGenerator": ""
+}, {
+	"Id": 210,
+	"Area": "Upper Arris Dome",
+	"Realm": "CT",
+	"MinXP": 650,
+	"MaxXP": 755,
+	"isGenerator": ""
+}, {
+	"Id": 211,
+	"Area": "Upper Land",
+	"Realm": "SoM",
+	"MinXP": 1788,
+	"MaxXP": 2298,
+	"isGenerator": ""
+}, {
+	"Id": 212,
+	"Area": "Vector",
+	"Realm": "FF6",
+	"MinXP": 3560,
+	"MaxXP": 4123,
+	"isGenerator": ""
+}, {
+	"Id": 213,
+	"Area": "Veldt Cave",
+	"Realm": "FF6",
+	"MinXP": 18103,
+	"MaxXP": 33807,
+	"isGenerator": ""
+}, {
+	"Id": 214,
+	"Area": "Wall Market",
+	"Realm": "FF7",
+	"MinXP": 682,
+	"MaxXP": 750,
+	"isGenerator": ""
+}, {
+	"Id": 215,
+	"Area": "Wind Shrine",
+	"Realm": "FF5",
+	"MinXP": 500,
+	"MaxXP": 986,
+	"isGenerator": ""
+}, {
+	"Id": 216,
+	"Area": "Worus",
+	"Realm": "FF5",
+	"MinXP": 300,
+	"MaxXP": 610,
+	"isGenerator": ""
+}, {
+	"Id": 217,
+	"Area": "Worus Castle",
+	"Realm": "FF5",
+	"MinXP": 680,
+	"MaxXP": 1055,
+	"isGenerator": ""
+}, {
+	"Id": 218,
+	"Area": "Worus Castle Water Tower",
+	"Realm": "FF5",
+	"MinXP": 1560,
+	"MaxXP": 1623,
+	"isGenerator": ""
+}, {
+	"Id": 219,
+	"Area": "Worus Overland",
+	"Realm": "FF5",
+	"MinXP": 1350,
+	"MaxXP": 2260,
+	"isGenerator": "generator"
+}, {
+	"Id": 220,
+	"Area": "Wutai",
+	"Realm": "FF7",
+	"MinXP": 10000,
+	"MaxXP": 14500,
+	"isGenerator": ""
+}, {
+	"Id": 221,
+	"Area": "Wutai Overland",
+	"Realm": "FF7",
+	"MinXP": 9600,
+	"MaxXP": 11400,
+	"isGenerator": "generator"
+}, {
+	"Id": 222,
+	"Area": "Zeal Palace",
+	"Realm": "CT",
+	"MinXP": 16600,
+	"MaxXP": 17100,
+	"isGenerator": ""
+}, {
+	"Id": 223,
+	"Area": "Zenan Bridge",
+	"Realm": "CT",
+	"MinXP": 2050,
+	"MaxXP": 2050,
+	"isGenerator": ""
+}, {
+	"Id": 224,
+	"Area": "Zozo",
+	"Realm": "FF6",
+	"MinXP": 2100,
+	"MaxXP": 2100,
+	"isGenerator": ""
+}]

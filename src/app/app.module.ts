@@ -7,11 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SpeedwalksComponent } from './speedwalks/speedwalks.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { AreasService } from './areas/areas.service';
+import { AreasComponent } from './areas/areas.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'speedwalks', component: SpeedwalksComponent },
+  { path: 'areas', component: AreasComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -23,16 +26,20 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SpeedwalksComponent
+    SpeedwalksComponent,
+    AreasComponent
   ],
   imports: [
     RouterModule.forRoot(
       appRoutes
     ),
     BrowserModule,
+    HttpClientModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    AreasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
