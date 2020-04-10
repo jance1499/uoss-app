@@ -3,21 +3,21 @@ import { Speedwalk } from "./speedwalk";
 export var SPEEDWALKS: Speedwalk[] = [
   {
     id: 1,
-    name: "hidonWalk",
+    name: "hidonwalk",
     directions: ["s", "s", "ff3", "say hidon"],
     category: "Secret Hunt",
     description: "Hidon Bone"
   },
   {
     id: 2,
-    name: "balCastleWalk",
+    name: "balcastlewalk",
     directions: ["e", "e", "ff5", "airship", "say bal castle"],
     category: "Area",
     description: "Bal Castle"
   },
   {
     id: 3,
-    name: "mission1Walk",
+    name: "mission1walk",
     directions: ["n", "n", "ct", "nw", "portal"],
     category: "Mission",
     description: "Chrono's Harem"

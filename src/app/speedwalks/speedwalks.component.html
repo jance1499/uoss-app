@@ -3,7 +3,7 @@
     type="success"
     *ngIf="!staticAlertClosed"
     (close)="staticAlertClosed = true"
-    >Link copied!</ngb-alert
+    >Speedwalk copied!</ngb-alert
   >
 </div>
 <form>
@@ -46,6 +46,13 @@
           (click)="onCopy(speedwalk.directions)"
         >
           <fa-icon [icon]="faCopy"></fa-icon>
+        </button>
+        <button
+          class="btn btn-light"
+          title="Copy Mudlet Lua alias to clipboard"
+          (click)="onCopyMudletAlias(speedwalk)"
+        >
+          <fa-icon [icon]="faFileCode"></fa-icon>
         </button>
         {{ speedwalk.directions.join(delimiter) }}
       </td>
