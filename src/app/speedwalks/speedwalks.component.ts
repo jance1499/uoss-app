@@ -13,6 +13,7 @@ import { SPEEDWALKS } from "./mock-speedwalks";
 export class SpeedwalksComponent implements OnInit {
   faCopy = faCopy;
   speedwalks = SPEEDWALKS;
+  delimiter = ";"
 
   staticAlertClosed = true;
 
@@ -22,9 +23,13 @@ export class SpeedwalksComponent implements OnInit {
   }
 
   onCopy(directions: string[]): void {
-    let text = directions.join(";");
+    let text = directions.join(this.delimiter);
     this._clipboardService.copyFromContent(text);
-    this.staticAlertClosed = false
+    this.staticAlertClosed = false;
     setTimeout(() => this.staticAlertClosed = true, 2000);
+  }
+
+  onChangeDelimiter(delimiter: string) {
+    this.delimiter = delimiter;
   }
 }

@@ -18,7 +18,13 @@
       >Delimiter
     </label>
     <div class="col-sm-1 m-3">
-      <input type="text" class="form-control" id="inputDelimiter" value=";" />
+      <input
+        type="text"
+        class="form-control"
+        id="inputDelimiter"
+        value=";"
+        (input)="onChangeDelimiter($event.target.value)"
+      />
     </div>
   </div>
 </form>
@@ -41,7 +47,7 @@
         >
           <fa-icon [icon]="faCopy"></fa-icon>
         </button>
-        {{ speedwalk.directions }}
+        {{ speedwalk.directions.join(delimiter) }}
       </td>
       <td>
         {{ speedwalk.category }}
