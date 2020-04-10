@@ -27,14 +27,20 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-4 m-3">
+  <div class="col-sm-1 m-3">
+    Import All
+  </div>
+  <div class="col-sm-1 m-3">
     <button
-      class="btn btn-light"
+      class="btn btn-light icon-mudlet"
       title="Copy all Mudlet speedwalks script to clipboard"
       (click)="onMudletAliasCreationScript()"
-    >
-      <fa-icon [icon]="faFileCode"></fa-icon> All Mudlet speedwalks script
-    </button>
+    ></button>
+    <button
+      class="btn btn-light icon-cmud"
+      title="Copy all Mudlet speedwalks script to clipboard"
+      (click)="onCmudAliasCreationScript()"
+    ></button>
   </div>
 </div>
 
@@ -57,12 +63,15 @@
           <fa-icon [icon]="faCopy"></fa-icon>
         </button>
         <button
-          class="btn btn-light"
+          class="btn btn-light icon-mudlet"
           title="Copy Mudlet Lua alias to clipboard"
           (click)="onCopyMudletAlias(speedwalk)"
-        >
-          <fa-icon [icon]="faFileCode"></fa-icon>
-        </button>
+        ></button>
+        <button
+          class="btn btn-light icon-cmud"
+          title="Copy CMUD alias to clipboard"
+          (click)="onCopyCmudAlias(speedwalk)"
+        ></button>
         {{ speedwalk.directions.join(delimiter) }}
       </td>
       <td>

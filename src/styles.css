@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.icon-mudlet {
+  background-image: url("./assets/mudlet_icon_16px.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-cmud {
+  background-image: url("./assets/cmud_icon_16px.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+}

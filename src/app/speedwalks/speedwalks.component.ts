@@ -36,28 +36,48 @@ export class SpeedwalksComponent implements OnInit {
 
   onCopyMudletAlias(speedwalk: Speedwalk): void {
     let directions = speedwalk.directions.join(this.delimiter);
-    let lua = `function createAlias()
+    let text = `function createAlias()
   if exists("${speedwalk.name}", "alias") == 0 then
     permAlias("${speedwalk.name}", "Speedwalks", "^${speedwalk.name}$", [[send ("${directions}")]])
   end
 end`;
-    this._clipboardService.copyFromContent(lua);
+    this._clipboardService.copyFromContent(text);
+    this.staticAlertClosed = false;
+    setTimeout(() => (this.staticAlertClosed = true), 2000);
+  }
+
+  onCopyCmudAlias(speedwalk: Speedwalk): void {
+    let directions = speedwalk.directions.join(this.delimiter);
+    let text = `#ALIAS ${speedwalk.name} {${directions}}`
+    this._clipboardService.copyFromContent(text);
+    this.staticAlertClosed = false;
+    setTimeout(() => (this.staticAlertClosed = true), 2000);
+  }
+
+  onCmudAliasCreationScript(): void {
+    let text = "";
+    this.speedwalks.forEach((speedwalk) => {
+      let directions = speedwalk.directions.join(this.delimiter);
+      text = text.concat(`#ALIAS ${speedwalk.name} {${directions}}`, "\n");
+    });
+
+    this._clipboardService.copyFromContent(text);
     this.staticAlertClosed = false;
     setTimeout(() => (this.staticAlertClosed = true), 2000);
   }
 
   onMudletAliasCreationScript(): void {
-    let lua = "function createAlias()\n";
+    let text = "function createAlias()\n";
     this.speedwalks.forEach((speedwalk) => {
       let directions = speedwalk.directions.join(this.delimiter);
       let createAliasScript = `if exists("${speedwalk.name}", "alias") == 0 then
   permAlias("${speedwalk.name}", "Speedwalks", "^${speedwalk.name}$", [[send ("${directions}")]])
 end`;
-      lua = lua.concat(createAliasScript, "\n");
+      text = text.concat(createAliasScript, "\n");
     });
-    lua = lua.concat("end");
+    text = text.concat("end");
 
-    this._clipboardService.copyFromContent(lua);
+    this._clipboardService.copyFromContent(text);
     this.staticAlertClosed = false;
     setTimeout(() => (this.staticAlertClosed = true), 2000);
   }
