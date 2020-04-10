@@ -3,31 +3,40 @@
     type="success"
     *ngIf="!staticAlertClosed"
     (close)="staticAlertClosed = true"
-    >Speedwalk copied!</ngb-alert
+    >Copied to clipboard!</ngb-alert
   >
 </div>
-<form>
-  <div class="form-group row">
-    <label for="inputSearch" class="col-sm-1 col-form-label m-3">Search</label>
-    <div class="col-sm-4 m-3">
-      <input type="text" class="form-control" id="inputSearch" />
-    </div>
+<div class="row">
+  <label for="inputSearch" class="col-sm-1 col-form-label m-3">Search</label>
+  <div class="col-sm-4 m-3">
+    <input type="text" class="form-control" id="inputSearch" />
   </div>
-  <div class="form-group row">
-    <label for="inputDelimiter" class="col-sm-1 col-form-label m-3"
-      >Delimiter
-    </label>
-    <div class="col-sm-1 m-3">
-      <input
-        type="text"
-        class="form-control"
-        id="inputDelimiter"
-        value=";"
-        (input)="onChangeDelimiter($event.target.value)"
-      />
-    </div>
+</div>
+<div class="row">
+  <label for="inputDelimiter" class="col-sm-1 col-form-label m-3"
+    >Delimiter
+  </label>
+  <div class="col-sm-1 m-3">
+    <input
+      type="text"
+      class="form-control"
+      id="inputDelimiter"
+      value=";"
+      (input)="onChangeDelimiter($event.target.value)"
+    />
   </div>
-</form>
+</div>
+<div class="row">
+  <div class="col-sm-4 m-3">
+    <button
+      class="btn btn-light"
+      title="Copy all Mudlet speedwalks script to clipboard"
+      (click)="onMudletAliasCreationScript()"
+    >
+      <fa-icon [icon]="faFileCode"></fa-icon> All Mudlet speedwalks script
+    </button>
+  </div>
+</div>
 
 <table class="table table-sm m-3">
   <thead>
