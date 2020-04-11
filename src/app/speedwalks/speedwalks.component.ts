@@ -27,6 +27,32 @@ export class SpeedwalksComponent implements OnInit {
     this.getSpeedwalks();
   }
 
+  onChangeSearch(search: string): void {
+    this.getSpeedwalks();
+
+    if (search === "") {
+      return;
+    }
+
+    search = search.toLocaleLowerCase();
+
+    this.speedwalks = this.speedwalks.filter(function(speedwalk) {
+      if (speedwalk.category.toLocaleLowerCase().includes(search)) {
+        return true;
+      }
+
+      if (speedwalk.description.toLocaleLowerCase().includes(search)) {
+        return true;
+      }
+
+      if (speedwalk.name.toLocaleLowerCase().includes(search)) {
+        return true;
+      }
+
+      return false;
+    });
+  }
+
   onCopy(directions: string[]): void {
     let text = directions.join(this.delimiter);
     this._clipboardService.copyFromContent(text);

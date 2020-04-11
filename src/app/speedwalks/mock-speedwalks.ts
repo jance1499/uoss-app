@@ -6,7 +6,7 @@ export var SPEEDWALKS: Speedwalk[] = [
     name: "hidonwalk",
     directions: ["s", "s", "ff3", "say hidon"],
     category: "Secret Hunt",
-    description: "Hidon Bone"
+    description: "Hidon"
   },
   {
     id: 2,

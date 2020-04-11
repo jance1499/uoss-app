@@ -9,7 +9,12 @@
 <div class="row">
   <label for="inputSearch" class="col-sm-1 col-form-label m-3">Search</label>
   <div class="col-sm-4 m-3">
-    <input type="text" class="form-control" id="inputSearch" />
+    <input
+      type="text"
+      class="form-control"
+      id="inputSearch"
+      (input)="onChangeSearch($event.target.value)"
+    />
   </div>
 </div>
 <div class="row">
