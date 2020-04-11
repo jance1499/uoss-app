@@ -2,14 +2,14 @@
   background-image: url("./assets/mudlet_icon_16px.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 38px;
 }
 
 .icon-cmud {
   background-image: url("./assets/cmud_icon_16px.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 38px;
 }
