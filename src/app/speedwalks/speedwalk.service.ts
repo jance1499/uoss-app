@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class SpeedwalkService {
-  getSpeedWalks():  Observable<Speedwalk[]> {
+  getSpeedWalks(): Observable<Speedwalk[]> {
     return of(SPEEDWALKS);
   }
 
