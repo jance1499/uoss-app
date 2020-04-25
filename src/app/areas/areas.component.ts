@@ -28,7 +28,6 @@ export class AreasComponent implements OnInit  {
 
       this.areas = this.areas.filter(area =>  {
         if (area.minXP >= this.minXP && !this.maxXP) {
-          console.log('No MAXXP defined');
           return true;
         }
         if (area.minXP >= this.minXP && area.maxXP <= this.maxXP) {
@@ -52,7 +51,6 @@ export class AreasComponent implements OnInit  {
           return true;
         }
         if (area.maxXP <= this.maxXP && area.minXP >= this.minXP) {
-          console.log('Hit the nonullMAXXP');
           return true;
         }
         return false;
