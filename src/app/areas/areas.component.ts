@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AreasService } from './areas.service';
 import { Area } from './area';
-import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-areas',
