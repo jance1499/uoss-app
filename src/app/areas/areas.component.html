@@ -1,63 +1,44 @@
 <div class = "row">
-    <label for="realmDropDown"class="col-sm-1 col-form-label m-3">
-        Realm 
+    <label for="minSearch" class="col-sm-1 col-form-label m-3">
+        Min
+       </label>
+    <div class="col-sm-1 m-3">
+        <input
+        type="text"
+        maxlength="7"
+        class="form-control"
+        id="minSearch"
+        (input)="onChangeMinXPSearch($event.target.value)"/>
+    </div>
+</div>
+<div class="row">
+    <label for="maxSearch"class="col-sm-1 col-form-label m-3"
+        >Max
     </label>
-    <div ngbDropdown class="d-inline-block">
-    <button class="btn btn-outline-primary m-3" id="dropdownBasic1" ngbDropdownToggle>
-        All Realms</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>FF4</button>
-            <button ngbDropdownItem>FF5</button>
-            <button ngbDropdownItem>FF6</button>
-            <button ngbDropdownItem>FF7</button>
-            <button ngbDropdownItem>CT</button>
-            <button ngbDropdownItem>SoM</button>
-            </div>
-        </div>
+    <div class="col-sm-1 m-3">
+        <input
+        type="text"
+        maxlength="7"
+        class="form-control"
+        id="maxSearch"
+        (input)="onChangeMaxXPSearch($event.target.value)" />
     </div>
-    <div class = "row">
-        <label for="generatorDropDown"class="col-sm-1 col-form-label m-3">
-            Pop Method 
-        </label>
-        <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary m-3" id="dropdownBasic1" ngbDropdownToggle>
-            All Methods</button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button ngbDropdownItem>Generator</button>
-                </div>
-            </div>
-        </div>
-    
-    <div class = "row">
-        <label for="minSearch" class="col-sm-1 col-form-label m-3">
-            Min</label>
-        <div class="col-sm-1 m-3">
-            <input type="text" maxlength="7" class="form-control" id="mindSearch" />
-        </div>
-    </div>
-    <div class="row">
-        <label for="maxSearch"class="col-sm-1 col-form-label m-3"
-          >Max
-        </label>
-        <div class="col-sm-1 m-3">
-          <input type="text" maxlength="7" class="form-control" id="maxSearch">
-        </div>
-      </div>
+</div>
 <table class="table table-bordered table-hover m-3">
-    <thead>
+<thead>
+    <tr>
+        <th scope="col">Area Name</th>
+        <th scope="col">Realm</th>
+        <th scope="col">Min</th>
+        <th scope="col">Max</th>
+    </tr>
+</thead>
+<tbody *ngFor="let area of areas">
         <tr>
-            <th scope="col">Area Name</th>
-            <th scope="col">Realm</th>
-            <th scope="col">Min</th>
-            <th scope="col">Max</th>
-        </tr>
-    </thead>
-    <tbody *ngFor="let area of areas">
-            <tr>
-                <td>{{area.Area}}</td>    
-                <td>{{area.Realm}}</td>
-                <td>{{area.MinXP}}</td>
-                <td>{{area.MaxXP}} </td> 
-            <tr>   
-    </tbody>
+            <td>{{area.area}}</td>
+            <td>{{area.realm}}</td>
+            <td>{{area.minXP}}</td>
+            <td>{{area.maxXP}} </td>
+        <tr>
+</tbody>
 </table>
