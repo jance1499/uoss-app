@@ -1,0 +1,145 @@
+[
+    {
+    "id": 0,
+    "name": "Onion Rod",
+    "slot": "Weapon",
+    "slotType": "Rod",
+    "location": "Elsendor Weapon Shop"
+    },
+    {
+      "id": 2,
+      "name": "Onion Sword",
+      "slot": "Weapon",
+      "slotType": "Sword",
+      "location": "Elsendor Weapon Shop"
+    },
+    {
+      "id": 3,
+      "name": "Onion Knife",
+      "slot": "Weapon",
+      "slotType": "Dagger",
+      "location": "Elsendor Weapon Shop"
+    },
+    {
+      "id": 4,
+      "name": "Onion Gun",
+      "slot": "Weapon",
+      "slotType": "Gun",
+      "location": "Elsendor Weapon Shop"
+    },
+    {
+      "id": 5,
+      "name": "Robe of Lords",
+      "slot": "Chest",
+      "slotType": "Robe",
+      "requirements": {
+        "vitality": 140,
+        "wisdom": 230,
+        "will": 170
+        },
+      "autos": {
+        "sosProtect": true,
+        "sosShell": true
+      },
+      "abilityModifiers": {
+        "pEvade": true,
+        "mEvade": true,
+        "evade": true,
+        "attack": true,
+        "mAttack": true
+      },
+      "location": "Synthesis (Hades)"
+    },
+    {
+      "id": 6,
+      "name": "Black Robe",
+      "slot": "Chest",
+      "slotType": "Robe",
+      "requirements": {
+        "wisdom": 175,
+        "will": 120
+        },
+      "statModifiers": {
+        "wisdom": 12
+        },
+      "empowerElements": {
+        "fire": true,
+        "ice": true,
+        "lightning": true
+      },
+    "abilityModifiers": {
+      "mEvade": true,
+      "evade": true
+      },
+      "location": "Synthesis"
+    },
+    {
+      "id": 7,
+      "name": "Venetian Shield",
+      "slot": "Shield",
+      "slotType": "Shield",
+      "requirements": {
+        "strength": 160,
+        "vitality": 160,
+        "wisdom": 160,
+        "will": 160
+        },
+      "elementalDefenses": {
+        "fire": 75,
+        "ice": 75,
+        "lightning": 75
+      },
+      "location": "Deep Dungeon (High)"
+    },
+    {
+      "id": 8,
+      "name": "Angel Ring",
+      "slot": "Accessorry",
+      "slotType": "Accessorry",
+      "requirements": {
+        "level": 90
+      },
+      "statusImmunities": {
+        "zombie": true,
+        "curse": true
+      },
+      "location": "Istory"
+    },
+    {
+      "id": 9,
+      "name": "Monster Killer",
+      "slot": "Weapon",
+      "slotType": "Katana",
+      "requirements": {
+        "strength": 140,
+        "agility": 95
+        },
+      "killers": {
+        "beast": true,
+        "dragon": true,
+        "lizard": true,
+        "slime": true
+      },
+      "abilityModifiers": {
+        "pevade": true
+      },
+      "location": "Elsendor Fame Shop"
+    },
+    {
+      "id": 10,
+      "name": "Chaos Bringer",
+      "slot": "Weapon",
+      "slotType": "Knight Sword",
+      "requirements": {
+        "job": "Dark Knight",
+        "joblevel": 8,
+        "strength": 125,
+        "vitality": 85
+
+        },
+      "touchStrikes": {
+        "blindtouch": true
+      },
+      "location": "Steal (Dark Knight)"
+    }
+]

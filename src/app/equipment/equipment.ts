@@ -6,12 +6,14 @@ export class Equipment {
   requirements: Requirements;
   elementalDefenses: ElementalDefenses;
   statusImmunities: StatusImmunities;
+  statModifiers: StatModifiers;
   abilityModifiers: AbilityModifiers;
   autos: Autos;
   touchStrikes: TouchStrikes;
   empowerElements: EmpowerElements;
   killers: Killers;
   unique: string;
+  location: string;
 }
 
 enum Slots {
@@ -25,27 +27,48 @@ enum Slots {
 }
 
 enum SlotTypes {
+  Axe,
+  Book,
+  Boomerang,
+  Bow,
+  Claw,
+  Crossbow,
+  Dagger,
+  Gun,
+  Hammer,
+  Instrument,
+  Katana,
+  Lance,
+  KnightSword,
+  MateriaBlade,
+  NinjaSword,
+  Pole,
+  Rod,
+  Staff,
+  Sword,
+  Whip,
   Hat,
   Helm,
   Robe,
   Clothing,
-  Armor
+  Armor,
+  Shield
 }
 
 
 class Requirements {
-  strength: number;
-  agility: number;
-  vitality: number;
-  wisdom: number;
-  will: number;
-  level: number;
-  cyborgLevel: number;
-  job: string;
-  jobLevel: number;
+  strength = 0;
+  agility = 0;
+  vitality = 0;
+  wisdom = 0;
+  will = 0;
+  level = 0;
+  cyborgLevel = 0;
+  job = '';
+  jobLevel = '0';
 }
 
-class AbilityModifiers {
+class StatModifiers {
   strength: number;
   agility: number;
   vitality: number;
@@ -59,13 +82,16 @@ class AbilityModifiers {
   level: number;
   healthPercent: number;
   manaPercent: number;
-  pattack: boolean;
+}
+
+class AbilityModifiers {
+  pAttack: boolean;
   mAttack: boolean;
   defense: boolean;
-  mdefense: boolean;
+  mDefense: boolean;
   evade: boolean;
-  pevade: boolean;
-  mevade: boolean;
+  pEvade: boolean;
+  mEvade: boolean;
   critical: boolean;
   mpCritical: boolean;
 }

@@ -8,6 +8,8 @@ import { SpeedwalksComponent } from './speedwalks/speedwalks.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AreasService } from './areas/areas.service';
 import { AreasComponent } from './areas/areas.component';
+import { EquipmentService } from './equipment/equipment.service';
+import { EquipmentComponent } from './equipment/equipment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClipboardModule } from 'ngx-clipboard';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -16,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'speedwalks', component: SpeedwalksComponent },
   { path: 'areas', component: AreasComponent },
+  { path: 'equipment', component: EquipmentComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -28,7 +31,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     SpeedwalksComponent,
-    AreasComponent
+    AreasComponent,
+    EquipmentComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -39,7 +43,8 @@ const appRoutes: Routes = [
     NgbModule
   ],
   providers: [
-    AreasService
+    AreasService,
+    EquipmentService
   ],
   bootstrap: [AppComponent]
 })
