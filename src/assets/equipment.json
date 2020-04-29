@@ -78,6 +78,10 @@
       "name": "Venetian Shield",
       "slot": "Shield",
       "slotType": "Shield",
+      "statModifiers": {
+        "defense" : 70,
+        "mdefense" :65
+      },
       "requirements": {
         "strength": 160,
         "vitality": 160,

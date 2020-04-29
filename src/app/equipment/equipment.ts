@@ -80,6 +80,10 @@ class StatModifiers {
   cyborgWisdom: number;
   cyborgWill: number;
   level: number;
+  weaponPower: number;
+  magicAttack: number;
+  defense: number;
+  mdefense: number;
   healthPercent: number;
   manaPercent: number;
 }
