@@ -37,12 +37,12 @@
   </div>
   <div class="col-sm-1 m-3">
     <button
-      class="btn btn-light icon-mudlet"
+      class="btn icon-mudlet"
       title="Copy all Mudlet speedwalks aliases to clipboard"
       (click)="onMudletAliasCreationScript()"
     ></button>
     <button
-      class="btn btn-light icon-cmud"
+      class="btn icon-cmud"
       title="Copy all CMUD speedwalks aliases to clipboard"
       (click)="onCmudAliasCreationScript()"
     ></button>
@@ -61,19 +61,19 @@
     <tr *ngFor="let speedwalk of speedwalks">
       <td>
         <button
-          class="btn btn-light"
+          class="btn"
           title="Copy to clipboard"
           (click)="onCopy(speedwalk.directions)"
         >
           <fa-icon [icon]="faCopy"></fa-icon>
         </button>
         <button
-          class="btn btn-light icon-mudlet"
+          class="btn icon-mudlet"
           title="Copy Mudlet Lua alias to clipboard"
           (click)="onCopyMudletAlias(speedwalk)"
         ></button>
         <button
-          class="btn btn-light icon-cmud"
+          class="btn icon-cmud"
           title="Copy CMUD alias to clipboard"
           (click)="onCopyCmudAlias(speedwalk)"
         ></button>
