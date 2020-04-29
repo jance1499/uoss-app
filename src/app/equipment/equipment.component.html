@@ -2,10 +2,9 @@
   <div *ngFor="let equip of equipment">
       <div class="card text-black bg-dark border-primary ml-3 mb-3" style="min-width: 18rem;">
         <div class ="card-title card-header text-center">
-          {{equip.slot}}
+          <div class="text-center"><b>{{equip.slotType}}</b></div>
         </div>
           <div class="card-body">
-            <div class="text-center"><b>{{equip.slotType}}</b></div>
             <div class="text-center">{{equip.name}}</div>
             <div class="card-group">
               <div class="card-body"><b>Requirements:</b>

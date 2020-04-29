@@ -98,8 +98,8 @@
     {
       "id": 8,
       "name": "Angel Ring",
-      "slot": "Accessorry",
-      "slotType": "Accessorry",
+      "slot": "Accessory",
+      "slotType": "Accessory",
       "requirements": {
         "level": 90
       },
