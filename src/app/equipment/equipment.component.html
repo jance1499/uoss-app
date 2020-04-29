@@ -1,20 +1,20 @@
-<div class="row no-gutters">
+<div class="card-group">
   <div *ngFor="let equip of equipment">
-      <div class="card text-black bg-dark ml-3 mb-3" style="min-width: 400px;">
+      <div class="card text-black bg-dark border-primary ml-3 mb-3" style="min-width: 18rem;">
         <div class ="card-title card-header text-center">
           {{equip.slot}}
         </div>
-          <div class="card-body" style="min-height: 350px;">
+          <div class="card-body">
             <div class="text-center"><b>{{equip.slotType}}</b></div>
             <div class="text-center">{{equip.name}}</div>
             <div class="card-group">
-              <div class="card-body" style="max-width:200px;"><b>Requirements:</b>
+              <div class="card-body"><b>Requirements:</b>
                 <div *ngFor="let requirement of equip.requirements | keyvalue: asIsOrder">
                   {{requirement.key}}:<span style="float:right">{{requirement.value}}</span>
                 </div>
                 <div *ngIf="!equip.requirements">None</div>
               </div>
-              <div class="card-body" style="max-width:200px;"><b>Effects:</b>
+              <div class="card-body"><b>Effects:</b>
                 <div *ngIf="!equip.statModifiers && !equip.statusImmunities &&
                             !equip.touchStrikes && !equip.unique &&
                             !equip.killers && !equip.empowerElements &&
