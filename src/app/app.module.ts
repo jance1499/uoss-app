@@ -13,6 +13,9 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClipboardModule } from 'ngx-clipboard';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -37,6 +40,8 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     HttpClientModule,
     FontAwesomeModule,
     ClipboardModule,
