@@ -38,8 +38,8 @@
         "will": 170
         },
       "autos": {
-        "sosProtect": true,
-        "sosShell": true
+        "autoProtect": true,
+        "autoShell": true
       },
       "abilityModifiers": {
         "pEvade": true,

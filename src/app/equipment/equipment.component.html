@@ -1,61 +1,122 @@
 <div class="row ml-3 mb-3">
   <div *ngFor="let equip of equipment">
-      <div class="card text-black bg-dark border-primary ml-3 mb-3" style="min-width: 18rem;">
-        <div class ="card-title card-header text-center">
-          <div class="text-center"><b>{{equip.slotType}}</b></div>
-        </div>
-          <div class="card-body">
-            <div class="text-center">{{equip.name}}</div>
-            <div class="card-group">
-              <div class="card-body"><b>Requirements:</b>
-                <div *ngFor="let requirement of equip.requirements | keyvalue: asIsOrder">
-                  {{requirement.key}}:<span style="float:right">{{requirement.value}}</span>
-                </div>
-                <div *ngIf="!equip.requirements">None</div>
-              </div>
-              <div class="card-body"><b>Effects:</b>
-                <div *ngIf="!equip.statModifiers && !equip.statusImmunities &&
-                            !equip.touchStrikes && !equip.unique &&
-                            !equip.killers && !equip.empowerElements &&
-                            !equip.autos && !equip.elementalDefenses">None</div>
-                <div *ngFor="let auto of equip.autos | keyvalue: asIsOrder">
-                  <div *ngIf="auto.value">{{auto.key}}</div>
-                </div>
-                <div *ngFor="let statModifier of equip.statModifiers | keyvalue: asIsOrder">
-                  {{statModifier.key}}:<span style="float:right">{{statModifier.value}}</span>
-                </div>
-                <div *ngFor="let empowerElement of equip.empowerElements | keyvalue: asIsOrder">
-                  <div *ngIf="empowerElement.value">empower {{empowerElement.key}}</div>
-                </div>
-                <div *ngFor="let touchstrike of equip.touchStrikes | keyvalue: asIsOrder">
-                  <div *ngIf="touchstrike.value">
-                    {{touchstrike.key}}
-                  </div>
-                </div>
-                <div *ngFor="let killer of equip.killers | keyvalue: asIsOrder">
-                  <div *ngIf="killer.value">
-                    {{killer.key}} killer
-                  </div>
-                </div>
-                <div *ngFor="let abilityModifier of equip.abilityModifiers | keyvalue: asIsOrder">
-                  <div *ngIf="abilityModifier.value">{{abilityModifier.key}}</div>
-                </div>
-                <div *ngFor="let elementalDefense of equip.elementalDefenses | keyvalue: asIsOrder">
-                <span *ngIf="elementalDefense.value > 0 && elementalDefense.value < 100">{{elementalDefense.key}} ward:</span>
-                <span *ngIf="elementalDefense.value < 0"> {{elementalDefense.key}}  weak:</span>
-                <span *ngIf="elementalDefense.value == 100"> {{elementalDefense.key}} absorb:</span>
-                <span style="float:right">{{elementalDefense.value}}</span>
-                </div>
-                <div *ngFor="let statusImmunity of equip.statusImmunities | keyvalue: asIsOrder">
-                  <div *ngIf="statusImmunity.value">
-                    {{statusImmunity.key}}proof
-                  </div>
-                </div>
-              </div>
+    <div
+      class="card text-black bg-dark border-primary ml-3 mb-3"
+      style="min-width: 18rem;"
+    >
+      <div class="card-title card-header text-center">
+        <div class="text-center">{{ equip.name }}</div>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Type</b>: <span style="float: right;">{{ equip.slotType }}</span>
+          </li>
+          <li *ngIf="equip.requirements" class="list-group-item">
+            <b>Requirement:</b>
+            <div
+              *ngFor="
+                let requirement of equip.requirements | keyvalue: asIsOrder
+              "
+            >
+              {{ requirement.key }}:
+              <span style="float: right;">{{ requirement.value }}</span>
             </div>
-          </div>
-          <div class="card-footer text-center">
-          <b>Location:</b> {{equip.location}}
+          </li>
+          <li *ngIf="equip.statModifiers" class="list-group-item">
+            <b>Stat Modifier:</b>
+            <div
+              *ngFor="
+                let statModifier of equip.statModifiers | keyvalue: asIsOrder
+              "
+            >
+              {{ statModifier.key }}:<span style="float: right;">{{
+                statModifier.value
+              }}</span>
+            </div>
+          </li>
+          <li *ngIf="equip.touchStrikes" class="list-group-item">
+            <b>Touchstrike:</b>
+            <div
+              *ngFor="
+                let touchStrikes of equip.touchStrikes | keyvalue: asIsOrder
+              "
+            >
+              {{ touchStrikes.key }}
+            </div>
+          </li>
+          <li *ngIf="equip.killers" class="list-group-item">
+            <b>Killer:</b>
+            <div *ngFor="let killer of equip.killers | keyvalue: asIsOrder">
+              <div *ngIf="killer.value">{{ killer.key }} killer</div>
+            </div>
+          </li>
+          <li *ngIf="equip.statusImmunities" class="list-group-item">
+            <b>Status Immunity:</b>
+            <div
+              *ngFor="
+                let statusImmunity of equip.statusImmunities
+                  | keyvalue: asIsOrder
+              "
+            >
+              <div *ngIf="statusImmunity.value">{{ statusImmunity.key }}</div>
+            </div>
+          </li>
+          <li *ngIf="equip.empowerElements" class="list-group-item">
+            <b>Empower Element:</b>
+            <div
+              *ngFor="
+                let empowerElement of equip.empowerElements
+                  | keyvalue: asIsOrder
+              "
+            >
+              <div *ngIf="empowerElement.value">{{ empowerElement.key }}</div>
+            </div>
+          </li>
+          <li *ngIf="equip.elementalDefenses" class="list-group-item">
+            <b>Element Resistance</b>
+            <div
+              *ngFor="
+                let elementalDefense of equip.elementalDefenses
+                  | keyvalue: asIsOrder
+              "
+            >
+              <span
+                *ngIf="
+                  elementalDefense.value > 0 && elementalDefense.value < 100
+                "
+                >{{ elementalDefense.key }} ward:</span
+              >
+              <span *ngIf="elementalDefense.value < 0">
+                {{ elementalDefense.key }} weak:</span
+              >
+              <span *ngIf="elementalDefense.value == 100">
+                {{ elementalDefense.key }} absorb:</span
+              >
+              <span style="float: right;">{{ elementalDefense.value }}</span>
+            </div>
+          </li>
+          <li *ngIf="equip.autos" class="list-group-item">
+            <b>Automatic Effects:</b>
+            <div *ngFor="let auto of equip.autos | keyvalue: asIsOrder">
+              <div *ngIf="auto.value">{{ auto.key }}</div>
+            </div>
+          </li>
+          <li *ngIf="equip.abilityModifiers" class="list-group-item">
+            <b>Ability Modifiers:</b>
+            <div
+              *ngFor="
+                let abilityModifier of equip.abilityModifiers
+                  | keyvalue: asIsOrder
+              "
+            >
+              <div *ngIf="abilityModifier.value">{{ abilityModifier.key }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card-footer text-center">
+        <b>Location:</b> {{ equip.location }}
       </div>
     </div>
   </div>
