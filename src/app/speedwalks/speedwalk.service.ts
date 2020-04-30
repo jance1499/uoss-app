@@ -13,6 +13,13 @@ export class SpeedwalkService {
     return this.database.list<Speedwalk>('/speedwalks').valueChanges();
   }
 
+  addSpeedwalk(speedwalk: Speedwalk) {
+      if (speedwalk.category && speedwalk.description && speedwalk.directions && speedwalk.name) {
+        const speedwalksRef = this.database.list<Speedwalk>('speedwalks');
+        speedwalksRef.push(speedwalk);
+      }
+  }
+
   constructor(private database: AngularFireDatabase) {
    }
 }

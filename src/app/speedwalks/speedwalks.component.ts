@@ -4,6 +4,9 @@ import { faCopy } from '@fortawesome/free-regular-svg-icons';
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 import { SpeedwalkService } from './speedwalk.service';
 import { Speedwalk } from './speedwalk';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormGroup } from '@angular/forms';
+import { SpeedwalkAddComponent } from './speedwalk-add/speedwalk-add.component';
 
 @Component({
   selector: 'app-speedwalks',
@@ -15,16 +18,28 @@ export class SpeedwalksComponent implements OnInit {
   faFileCode = faFileCode;
   speedwalks: Speedwalk[];
   delimiter = ';';
+  addSpeedwalkForm: FormGroup;
+
 
   staticAlertClosed = true;
 
   constructor(
     private clipboardService: ClipboardService,
-    private speedwalkService: SpeedwalkService
+    private speedwalkService: SpeedwalkService,
+    private modalService: NgbModal
   ) {}
 
   ngOnInit(): void {
     this.getSpeedwalks();
+  }
+
+  openModal() {
+    const modal = this.modalService.open(SpeedwalkAddComponent);
+    modal.result.then((result) => {
+      if (result) {
+        this.speedwalkService.addSpeedwalk(result);
+      }
+    });
   }
 
   onChangeSearch(search: string): void {

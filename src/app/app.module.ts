@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SpeedwalksComponent } from './speedwalks/speedwalks.component';
+import { SpeedwalkAddComponent } from './speedwalks/speedwalk-add/speedwalk-add.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AreasService } from './areas/areas.service';
 import { AreasComponent } from './areas/areas.component';
@@ -16,6 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -34,8 +37,12 @@ const appRoutes: Routes = [
     HeaderComponent,
     HomeComponent,
     SpeedwalksComponent,
+    SpeedwalkAddComponent,
     AreasComponent,
-    EquipmentComponent
+    EquipmentComponent,
+  ],
+  entryComponents: [
+    SpeedwalkAddComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -45,7 +52,9 @@ const appRoutes: Routes = [
     HttpClientModule,
     FontAwesomeModule,
     ClipboardModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AreasService,
