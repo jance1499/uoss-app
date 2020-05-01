@@ -35,10 +35,12 @@ export class SpeedwalksComponent implements OnInit {
 
   openModal() {
     const modal = this.modalService.open(SpeedwalkAddComponent);
-    modal.result.then((result) => {
+    modal.result.then((result: Speedwalk) => {
       if (result) {
         this.speedwalkService.addSpeedwalk(result);
       }
+    }, _ => {
+      // console.log('Dismissed add speedwalk modal.');
     });
   }
 
@@ -127,7 +129,6 @@ end`;
 
   getSpeedwalks(): void {
     this.speedwalkService.getSpeedWalks().subscribe((speedwalks) => {
-      console.log(speedwalks);
       this.speedwalks = speedwalks as Speedwalk[];
     });
   }

@@ -20,8 +20,10 @@ export class SpeedwalkAddComponent implements OnInit {
   }
 
   addSpeedwalk() {
-    const directionsSplit = this.directions.split(';');
-    const speedwalk: Speedwalk = { name: this.name, description: this.description, category: this.category, directions: directionsSplit };
-    this.activeModal.close(speedwalk);
+    if (this.name && this.description && this.category && this.directions) {
+      const directionsSplit = this.directions.split(';').map(item => item.trim());
+      const speedwalk: Speedwalk = { name: this.name, description: this.description, category: this.category, directions: directionsSplit };
+      this.activeModal.close(speedwalk);
+    }
   }
 }
