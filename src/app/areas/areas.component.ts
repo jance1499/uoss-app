@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { AreasService } from './areas.service';
 import { Area } from './area';
 
-@Component({
+@Component ({
   selector: 'app-areas',
   templateUrl: 'areas.component.html'
 })
 
-export class AreasComponent implements OnInit  {
+export class AreasComponent implements OnInit {
   areas: Area[];
   minXP: number;
   maxXP: number;

@@ -133,7 +133,7 @@
       "id": 10,
       "name": "Chaos Bringer",
       "slot": "Weapon",
-      "slotType": "Knight Sword",
+      "slotType": "KnightSword",
       "requirements": {
         "job": "Dark Knight",
         "joblevel": 8,

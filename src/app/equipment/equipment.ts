@@ -2,7 +2,7 @@ export class Equipment {
   id: number;
   name: string;
   slot: Slots;
-  slotType: SlotTypes;
+  slotType: string;
   requirements: Requirements;
   elementalDefenses: ElementalDefenses;
   statusImmunities: StatusImmunities;
@@ -26,7 +26,7 @@ enum Slots {
   Personal
 }
 
-enum SlotTypes {
+export enum SlotTypes {
   Axe,
   Book,
   Boomerang,
@@ -52,9 +52,11 @@ enum SlotTypes {
   Robe,
   Clothing,
   Armor,
-  Shield
+  Bracelet,
+  Shield,
+  Accessory,
+  Personal
 }
-
 
 class Requirements {
   strength = 0;
