@@ -1,7 +1,6 @@
-export class Speedwalk {
-  id: number;
+export interface Speedwalk {
   name: string;
-  directions: string[];
+  directions?: (string)[] | null;
   category: string;
   description: string;
 }

@@ -4,6 +4,9 @@ import { faCopy } from '@fortawesome/free-regular-svg-icons';
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
 import { SpeedwalkService } from './speedwalk.service';
 import { Speedwalk } from './speedwalk';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormGroup } from '@angular/forms';
+import { SpeedwalkAddComponent } from './speedwalk-add/speedwalk-add.component';
 
 @Component({
   selector: 'app-speedwalks',
@@ -15,38 +18,53 @@ export class SpeedwalksComponent implements OnInit {
   faFileCode = faFileCode;
   speedwalks: Speedwalk[];
   delimiter = ';';
+  addSpeedwalkForm: FormGroup;
+
 
   staticAlertClosed = true;
 
   constructor(
     private clipboardService: ClipboardService,
-    private speedwalkService: SpeedwalkService
+    private speedwalkService: SpeedwalkService,
+    private modalService: NgbModal
   ) {}
 
   ngOnInit(): void {
     this.getSpeedwalks();
   }
 
+  openModal() {
+    const modal = this.modalService.open(SpeedwalkAddComponent);
+    modal.result.then((result: Speedwalk) => {
+      if (result) {
+        this.speedwalkService.addSpeedwalk(result);
+      }
+    }, _ => {
+      // console.log('Dismissed add speedwalk modal.');
+    });
+  }
+
   onChangeSearch(search: string): void {
-    this.getSpeedwalks();
-
-    if (search === '') {
-      return;
-    }
-
-    search = search.toLocaleLowerCase();
-
-    this.speedwalks = this.speedwalks.filter(speedwalk =>  {
-      if (speedwalk.category.toLocaleLowerCase().includes(search)) {
-        return true;
+    this.speedwalkService.getSpeedWalks().subscribe((speedwalks) => {
+      if (search === '') {
+        this.speedwalks = speedwalks;
+        return;
       }
-      if (speedwalk.description.toLocaleLowerCase().includes(search)) {
-        return true;
-      }
-      if (speedwalk.name.toLocaleLowerCase().includes(search)) {
-        return true;
-      }
-      return false;
+
+      search = search.toLocaleLowerCase();
+
+      this.speedwalks = speedwalks.filter((speedwalk) => {
+        if (speedwalk.category.toLocaleLowerCase().includes(search)) {
+          return true;
+        }
+        if (speedwalk.description.toLocaleLowerCase().includes(search)) {
+          return true;
+        }
+        if (speedwalk.name.toLocaleLowerCase().includes(search)) {
+          return true;
+        }
+        return false;
+      });
     });
   }
 
@@ -110,8 +128,8 @@ end`;
   }
 
   getSpeedwalks(): void {
-    this.speedwalkService
-      .getSpeedWalks()
-      .subscribe((speedwalks) => (this.speedwalks = speedwalks));
+    this.speedwalkService.getSpeedWalks().subscribe((speedwalks) => {
+      this.speedwalks = speedwalks as Speedwalk[];
+    });
   }
 }
