@@ -50,7 +50,7 @@ export enum SlotTypes {
   Hat,
   Helm,
   Robe,
-  Clothing,
+  Clothes,
   Armor,
   Bracelet,
   Shield,
