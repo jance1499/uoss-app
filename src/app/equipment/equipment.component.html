@@ -115,10 +115,26 @@
 </div>
 </form>
 
+<div class="text-center mt-3">
+  <div class="btn-group" *ngFor="let auto of autos | keyvalue">
+    <div
+      id="{{ auto.key }}"
+      class="btn btn-lg ml-3 mb-3"
+      [ngClass]="
+        !isFiltered(auto.key) ? 'btn-primary' : 'btn-secondary'
+      "
+      (click)="onClickAutoFilterToggle(auto.key)"
+      role="button"
+      aria-pressed="true"
+    >
+      {{ auto.key }}
+    </div>
+  </div>
+
 <div class="row">
   <div *ngFor="let equip of equipment">
     <div
-      *ngIf="!isFiltered(equip.slotType) && meetsRequirements(equip)"
+      *ngIf="!isFiltered(equip.slotType) && meetsRequirements(equip) && meetsAutos(equip.autos)"
       class="card text-black bg-dark border-primary ml-3 mb-3"
       style="min-width: 18rem;"
     >

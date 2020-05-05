@@ -128,24 +128,24 @@ class ElementalDefenses {
   spDrain: number;
 }
 
-class Autos {
+export class Autos {
   // SOS
-  sosProtect: boolean;
-  sosShell: boolean;
-  sosConvalescence: boolean;
-  counterForce: boolean;
+  sosProtect = false;
+  sosShell = false;
+  sosConvalescence = false;
+  counterForce = false;
   // Auto
-  autoVeil: boolean;
-  autoBerserk: boolean;
-  autoProtect: boolean;
-  autoShell: boolean;
-  autoHaste: boolean;
-  autoRegen: boolean;
-  autoZombie: boolean;
-  autoRefresh: boolean;
-  autoReflect: boolean;
-  autoFloat: boolean;
-  autoEther: boolean;
+  autoVeil = false;
+  autoBerserk = false;
+  autoProtect = false;
+  autoShell = false;
+  autoHaste = false;
+  autoRegen = false;
+  autoZombie = false;
+  autoRefresh = false;
+  autoReflect = false;
+  autoFloat = false;
+  autoEther = false;
 }
 
 class StatusImmunities {

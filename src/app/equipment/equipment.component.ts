@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { EquipmentService } from './equipment.service';
 import { Equipment } from './equipment';
 import { SlotTypes } from './equipment';
+import { Autos } from './equipment';
+import { analytics } from 'firebase';
 
 @Component({
   selector: 'app-equipment',
@@ -9,9 +11,11 @@ import { SlotTypes } from './equipment';
 })
 export class EquipmentComponent implements OnInit {
   equipment: Equipment[];
+  autos: Autos;
   weaponTypes: string[];
   weaponTypes2: string[];
   armorTypes: string[];
+  autosFilter: boolean[];
   filterList: string[];
   isAllWeapons: boolean;
   isAllArmor: boolean;
@@ -29,6 +33,10 @@ export class EquipmentComponent implements OnInit {
     this.equipmentService
       .getEquipment()
       .subscribe((equipment) => (this.equipment = equipment));
+
+    this.autos = new Autos();
+    console.log(this.autos);
+
     const armorFilters = [
       'Armor',
       'Bracelet',
@@ -71,6 +79,7 @@ export class EquipmentComponent implements OnInit {
 
     this.filterList = armorFilters.concat(weaponFilters);
     this.filterList = this.filterList.concat(weaponFilters2);
+    this.filterList = this.filterList.concat(Object.keys(this.autos));
 
     this.weaponTypes = this.buildArray();
     this.weaponTypes = this.weaponTypes.filter((item) =>
@@ -252,6 +261,12 @@ export class EquipmentComponent implements OnInit {
     return false;
   }
 
+  meetsAutos(auto: Autos) {
+    if (this.autos) {
+      return true;
+    }
+  }
+
   filterPasses(requirement: any, amount: number): boolean {
     if (!requirement) {
       return true;
@@ -262,5 +277,14 @@ export class EquipmentComponent implements OnInit {
     }
 
     return false;
+  }
+
+  onClickAutoFilterToggle(auto) {
+    if (this.filterList.includes(auto)) {
+      this.filterList = this.filterList.filter((item) => item !== auto);
+    } else {
+      this.filterList.push(auto);
+    }
+    console.log(this.filterList);
   }
 }
