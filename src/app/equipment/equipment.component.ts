@@ -3,7 +3,13 @@ import { EquipmentService } from './equipment.service';
 import { Equipment } from './equipment';
 import { SlotTypes } from './equipment';
 import { Autos } from './equipment';
-import { analytics } from 'firebase';
+import { ElementalDefenses } from './equipment';
+import { StatModifiers } from './equipment';
+import { EmpowerElements } from './equipment';
+import { TouchStrikes } from './equipment';
+import { StatusImmunities } from './equipment';
+import { AbilityModifiers } from './equipment';
+import { Killers } from './equipment';
 
 @Component({
   selector: 'app-equipment',
@@ -12,6 +18,13 @@ import { analytics } from 'firebase';
 export class EquipmentComponent implements OnInit {
   equipment: Equipment[];
   autos: Autos;
+  elementalDefenses: ElementalDefenses;
+  statusImmunities: StatusImmunities;
+  statModifiers: StatModifiers;
+  abilityModifiers: AbilityModifiers;
+  touchStrikes: TouchStrikes;
+  empowerElements: EmpowerElements;
+  killers: Killers;
   weaponTypes: string[];
   weaponTypes2: string[];
   armorTypes: string[];
@@ -26,6 +39,7 @@ export class EquipmentComponent implements OnInit {
   wisdomFilter: number;
   willFilter: number;
   levelFilter: number;
+  activeTab = 'slotType';
 
   constructor(private equipmentService: EquipmentService) {}
 
@@ -35,7 +49,8 @@ export class EquipmentComponent implements OnInit {
       .subscribe((equipment) => (this.equipment = equipment));
 
     this.autos = new Autos();
-    console.log(this.autos);
+    this.statusImmunities = new StatusImmunities();
+    this.abilityModifiers = new AbilityModifiers();
 
     const armorFilters = [
       'Armor',
@@ -80,6 +95,8 @@ export class EquipmentComponent implements OnInit {
     this.filterList = armorFilters.concat(weaponFilters);
     this.filterList = this.filterList.concat(weaponFilters2);
     this.filterList = this.filterList.concat(Object.keys(this.autos));
+    this.filterList = this.filterList.concat(Object.keys(this.statusImmunities));
+    this.filterList = this.filterList.concat(Object.keys(this.abilityModifiers));
 
     this.weaponTypes = this.buildArray();
     this.weaponTypes = this.weaponTypes.filter((item) =>
@@ -105,6 +122,15 @@ export class EquipmentComponent implements OnInit {
     keys.slice(keys.length / 2, keys.length - 1);
     return keys.slice();
   }
+
+  toggleSlotTab(activeTab) {
+    this.activeTab = activeTab;
+  }
+
+  toggleAffectedByTab(activeTab) {
+    this.activeTab = activeTab;
+  }
+
   onClickFilterToggle(slotType) {
     if (this.filterList.includes(slotType)) {
       this.filterList = this.filterList.filter((item) => item !== slotType);
@@ -236,34 +262,62 @@ export class EquipmentComponent implements OnInit {
   }
   meetsRequirements(equip: Equipment) {
     if (
-      (this.strengthFilter == null || this.strengthFilter === 0 || isNaN(this.strengthFilter)) &&
-      (this.agilityFilter == null || this.agilityFilter === 0 || isNaN(this.agilityFilter)) &&
-      (this.vitalityFilter == null || this.vitalityFilter === 0 || isNaN(this.vitalityFilter)) &&
-      (this.wisdomFilter == null || this.wisdomFilter === 0 || isNaN(this.wisdomFilter)) &&
-      (this.willFilter == null || this.willFilter === 0 || isNaN(this.willFilter)) &&
-      (this.levelFilter == null || this.levelFilter === 0 || isNaN(this.levelFilter))) {
-        return true;
+      (this.strengthFilter == null ||
+        this.strengthFilter === 0 ||
+        isNaN(this.strengthFilter)) &&
+      (this.agilityFilter == null ||
+        this.agilityFilter === 0 ||
+        isNaN(this.agilityFilter)) &&
+      (this.vitalityFilter == null ||
+        this.vitalityFilter === 0 ||
+        isNaN(this.vitalityFilter)) &&
+      (this.wisdomFilter == null ||
+        this.wisdomFilter === 0 ||
+        isNaN(this.wisdomFilter)) &&
+      (this.willFilter == null ||
+        this.willFilter === 0 ||
+        isNaN(this.willFilter)) &&
+      (this.levelFilter == null ||
+        this.levelFilter === 0 ||
+        isNaN(this.levelFilter))
+    ) {
+      return true;
     }
 
-    if (equip.requirements &&
-      (this.filterPasses(equip.requirements.strength, this.strengthFilter) &&
+    if (
+      equip.requirements &&
+      this.filterPasses(equip.requirements.strength, this.strengthFilter) &&
       this.filterPasses(equip.requirements.agility, this.agilityFilter) &&
       this.filterPasses(equip.requirements.vitality, this.vitalityFilter) &&
       this.filterPasses(equip.requirements.wisdom, this.wisdomFilter) &&
       this.filterPasses(equip.requirements.will, this.willFilter) &&
-      this.filterPasses(equip.requirements.level, this.levelFilter))) {
-          return true;
-      }
+      this.filterPasses(equip.requirements.level, this.levelFilter)
+    ) {
+      return true;
+    }
     if (!equip.requirements) {
-        return true;
-      }
+      return true;
+    }
 
     return false;
   }
 
-  meetsAutos(auto: Autos) {
-    if (this.autos) {
-      return true;
+  meetsAffectedByFilters(autos, statusImmunities, abilityModifiers) {
+    for (const auto in autos) {
+      if (!this.filterList.includes(auto)) {
+        return true;
+      }
+    }
+    for (const statusImmunity in statusImmunities) {
+      if (!this.filterList.includes(statusImmunity)) {
+        return true;
+      }
+    }
+
+    for (const abilityModifier in abilityModifiers) {
+      if (!this.filterList.includes(abilityModifier)) {
+        return true;
+      }
     }
   }
 

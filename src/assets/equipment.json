@@ -45,7 +45,7 @@
         "pEvade": true,
         "mEvade": true,
         "evade": true,
-        "attack": true,
+        "pAttack": true,
         "mAttack": true
       },
       "location": "Synthesis (Hades)"
@@ -125,7 +125,7 @@
         "slime": true
       },
       "abilityModifiers": {
-        "pevade": true
+        "pEvade": true
       },
       "location": "Elsendor Fame Shop"
     },

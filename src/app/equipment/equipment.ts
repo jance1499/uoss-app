@@ -70,7 +70,7 @@ class Requirements {
   jobLevel = '0';
 }
 
-class StatModifiers {
+export class StatModifiers {
   strength: number;
   agility: number;
   vitality: number;
@@ -90,19 +90,19 @@ class StatModifiers {
   manaPercent: number;
 }
 
-class AbilityModifiers {
-  pAttack: boolean;
-  mAttack: boolean;
-  defense: boolean;
-  mDefense: boolean;
-  evade: boolean;
-  pEvade: boolean;
-  mEvade: boolean;
-  critical: boolean;
-  mpCritical: boolean;
+export class AbilityModifiers {
+  pAttack = false;
+  mAttack = false;
+  defense = false;
+  mDefense = false;
+  evade = false;
+  pEvade = false;
+  mEvade = false;
+  critical = false;
+  mpCritical = false;
 }
 
-class EmpowerElements{
+export class EmpowerElements {
   fire: boolean;
   ice: boolean;
   lightning: boolean;
@@ -114,7 +114,7 @@ class EmpowerElements{
   poison: boolean;
 }
 
-class ElementalDefenses {
+export class ElementalDefenses {
   fire: number;
   ice: number;
   lightning: number;
@@ -148,24 +148,24 @@ export class Autos {
   autoEther = false;
 }
 
-class StatusImmunities {
-  petrify: boolean;
-  dontAct: boolean;
-  dontMove: boolean;
-  slow: boolean;
-  blind: boolean;
-  gravity: boolean;
-  zombie: boolean;
-  curse: boolean;
-  sleep: boolean;
-  berserk: boolean;
-  poison: boolean;
-  imp: boolean;
-  mini: boolean;
-  silence: boolean;
+export class StatusImmunities {
+  petrify = false;
+  dontAct = false;
+  dontMove = false;
+  slow = false;
+  blind = false;
+  gravity = false;
+  zombie = false;
+  curse = false;
+  sleep = false;
+  berserk = false;
+  poison = false;
+  imp = false;
+  mini = false;
+  silence = false;
 }
 
-class Killers {
+export class Killers {
   lizard: boolean;
   slime: boolean;
   insect: boolean;
@@ -176,7 +176,7 @@ class Killers {
   humanoid: boolean;
   machine: boolean;
 }
-class TouchStrikes {
+export class TouchStrikes {
   // Statuses
   blindTouch: boolean;
   blindStrike: boolean;

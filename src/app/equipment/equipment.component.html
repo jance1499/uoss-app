@@ -1,140 +1,211 @@
-<div class="text-center mb-3">
+<ul class="justify-content-center mb-3 nav nav-tabs">
+  <li class="nav-item">
+    <a
+      class="nav-link active"
+      data-toggle="tab"
+      href="equipment#slot-types"
+      [ngClass]="{ active: activeTab === 'slotType' }"
+      (click)="toggleSlotTab('slotType')"
+      >Equipment Types</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      href="equipment#affected-bys"
+      [ngClass]="{ active: activeTab === 'affectedBy' }"
+      (click)="toggleAffectedByTab('affectedBy')"
+      >Affected Bys</a
+    >
+  </li>
+</ul>
+
+<div id="tabbedContent" class="tab-content">
   <div
-    class="btn btn-lg"
-    [ngClass]="isAllWeapons ? 'btn-primary' : 'btn-secondary'"
-    (click)="toggleAllWeapons()"
-    role="button"
-    area-pressed="true"
+    class="tab-pane fade active show"
+    id="slot-types"
+    [ngClass]="{ 'active show': activeTab === 'slotType' }"
   >
-    Toggle All Weapons
+    <div class="text-center">
+      <div
+        class="btn btn-lg mb-3"
+        [ngClass]="isAllWeapons ? 'btn-primary' : 'btn-secondary'"
+        (click)="toggleAllWeapons()"
+        role="button"
+        area-pressed="true"
+      >
+        Toggle All Weapons
+      </div>
+      <div
+        class="btn btn-lg ml-3 mb-3"
+        [ngClass]="isAllArmor ? 'btn-primary' : 'btn-secondary'"
+        (click)="toggleAllArmor()"
+        role="button"
+        area-pressed="true"
+      >
+        Toggle All Armor
+      </div>
+      <div
+        class="btn btn-lg ml-3 mb-3"
+        [ngClass]="isAllEquipment ? 'btn-primary' : 'btn-secondary'"
+        (click)="toggleAllEquipment()"
+        role="button"
+        area-pressed="true"
+      >
+        Toggle All Equipment
+      </div>
+
+      <div class="text-center">
+        <div
+          class="btn-group"
+          *ngFor="let weaponType of weaponTypes | keyvalue"
+        >
+          <div
+            id="{{ weaponType.value }}"
+            class="btn btn-lg ml-3 mb-3"
+            [ngClass]="
+              !isFiltered(weaponType.value) ? 'btn-primary' : 'btn-secondary'
+            "
+            (click)="onClickFilterToggle(weaponType.value)"
+            role="button"
+            aria-pressed="true"
+          >
+            {{ weaponType.value }}
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <div
+          class="btn-group"
+          *ngFor="let weaponType of weaponTypes2 | keyvalue"
+        >
+          <div
+            id="{{ weaponType.value }}"
+            class="btn btn-lg ml-3 mb-3"
+            [ngClass]="
+              !isFiltered(weaponType.value) ? 'btn-primary' : 'btn-secondary'
+            "
+            (click)="onClickFilterToggle(weaponType.value)"
+            role="button"
+            aria-pressed="true"
+          >
+            {{ weaponType.value }}
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <div class="btn-group" *ngFor="let armorType of armorTypes | keyvalue">
+          <div
+            class="btn btn-lg ml-3 mb-3"
+            [ngClass]="
+              !isFiltered(armorType.value) ? 'btn-primary' : 'btn-secondary'
+            "
+            (click)="onClickFilterToggle(armorType.value)"
+            role="button"
+            aria-pressed="true"
+          >
+            {{ armorType.value }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div
-    class="btn btn-lg ml-3"
-    [ngClass]="isAllArmor ? 'btn-primary' : 'btn-secondary'"
-    (click)="toggleAllArmor()"
-    role="button"
-    area-pressed="true"
+    class="tab-pane fade"
+    id="affected-bys"
+    [ngClass]="{ 'active show': activeTab === 'affectedBy' }"
   >
-    Toggle All Armor
-  </div>
-  <div
-  class="btn btn-lg ml-3"
-  [ngClass]="isAllEquipment ? 'btn-primary' : 'btn-secondary'"
-  (click)="toggleAllEquipment()"
-  role="button"
-  area-pressed="true"
->
-  Toggle All Equipment
-</div>
-</div>
-
-<div class="text-center">
-  <div class="btn-group" *ngFor="let weaponType of weaponTypes | keyvalue">
-    <div
-      id="{{ weaponType.value }}"
-      class="btn btn-lg ml-3 mb-3"
-      [ngClass]="
-        !isFiltered(weaponType.value) ? 'btn-primary' : 'btn-secondary'
-      "
-      (click)="onClickFilterToggle(weaponType.value)"
-      role="button"
-      aria-pressed="true"
-    >
-      {{ weaponType.value }}
+    <div class="text-center mt-3">
+      <div class="btn-group" *ngFor="let auto of autos | keyvalue">
+        <div
+          id="{{ auto.key }}"
+          class="btn btn-lg ml-3 mb-3"
+          [ngClass]="!isFiltered(auto.key) ? 'btn-primary' : 'btn-secondary'"
+          (click)="onClickAutoFilterToggle(auto.key)"
+          role="button"
+          aria-pressed="true"
+        >
+          {{ auto.key }}
+        </div>
+      </div>
+      <div class="btn-group" *ngFor="let statusImmunity of statusImmunities | keyvalue">
+        <div
+          id="{{ statusImmunity.key }}"
+          class="btn btn-lg ml-3 mb-3"
+          [ngClass]="!isFiltered(statusImmunity.key) ? 'btn-primary' : 'btn-secondary'"
+          (click)="onClickAutoFilterToggle(statusImmunity.key)"
+          role="button"
+          aria-pressed="true"
+        >
+          {{ statusImmunity.key }}Proof
+        </div>
+      </div>
+      <div class="btn-group" *ngFor="let abilityModifier of abilityModifiers | keyvalue">
+        <div
+          id="{{ abilityModifier.key }}"
+          class="btn btn-lg ml-3 mb-3"
+          [ngClass]="!isFiltered(abilityModifier.key) ? 'btn-primary' : 'btn-secondary'"
+          (click)="onClickAutoFilterToggle(abilityModifier.key)"
+          role="button"
+          aria-pressed="true"
+        >
+          {{ abilityModifier.key }}
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<div class="text-center ml-3">
-  <div class="btn-group" *ngFor="let weaponType of weaponTypes2 | keyvalue">
-    <div
-      id="{{ weaponType.value }}"
-      class="btn btn-lg ml-3 mb-3"
-      [ngClass]="
-        !isFiltered(weaponType.value) ? 'btn-primary' : 'btn-secondary'
-      "
-      (click)="onClickFilterToggle(weaponType.value)"
-      role="button"
-      aria-pressed="true"
-    >
-      {{ weaponType.value }}
-    </div>
-  </div>
-</div>
-
-<div class="text-center">
-  <div class="btn-group" *ngFor="let armorType of armorTypes | keyvalue">
-    <div
-      class="btn btn-lg ml-3 mb-3"
-      [ngClass]="!isFiltered(armorType.value) ? 'btn-primary' : 'btn-secondary'"
-      (click)="onClickFilterToggle(armorType.value)"
-      role="button"
-      aria-pressed="true"
-    >
-      {{ armorType.value }}
-    </div>
-  </div>
-</div>
-
-<form class="row text-center justify-content-center">
+<form id="reqsForm" class="row text-center justify-content-center">
   <div class="form-group col-xs-4 col-md-1">
-      <div for="strreq" class="control-label">STR</div>
-      <input
+    <div for="strreq" class="control-label">STR</div>
+    <input
       (input)="onChangeStrengthFilter($event.target.value)"
-      class="form-control">
+      class="form-control"
+    />
   </div>
   <div class="form-group col-xs-4 col-md-1">
-      <div for="agireq" class="control-label">AGI</div>
-      <input
+    <div for="agireq" class="control-label">AGI</div>
+    <input
       (input)="onChangeAgilityFilter($event.target.value)"
-      class="form-control">
+      class="form-control"
+    />
   </div>
   <div class="form-group col-xs-4 col-md-1">
-      <div for="vitreq" class="control-label">VIT</div>
-      <input
+    <div for="vitreq" class="control-label">VIT</div>
+    <input
       (input)="onChangeVitalityFilter($event.target.value)"
-      class="form-control">
+      class="form-control"
+    />
   </div>
   <div class="form-group col-xs-4 col-md-1">
     <div for="wisreq" class="control-label">WIS</div>
     <input
-    (input)="onChangeWisdomFilter($event.target.value)"
-    class="form-control">
-</div>
-<div class="form-group col-xs-4 col-md-1">
+      (input)="onChangeWisdomFilter($event.target.value)"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group col-xs-4 col-md-1">
     <div for="willreq" class="control-label">WILL</div>
     <input
-    (input)="onChangeWillFilter($event.target.value)"
-    class="form-control">
-</div>
-<div class="form-group col-xs-4 col-md-1">
+      (input)="onChangeWillFilter($event.target.value)"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group col-xs-4 col-md-1">
     <div for="lvlreq" class="control-label">LVL</div>
     <input
-    (input)="onChangeLevelFilter($event.target.value)"
-    class="form-control">
-</div>
-</form>
-
-<div class="text-center mt-3">
-  <div class="btn-group" *ngFor="let auto of autos | keyvalue">
-    <div
-      id="{{ auto.key }}"
-      class="btn btn-lg ml-3 mb-3"
-      [ngClass]="
-        !isFiltered(auto.key) ? 'btn-primary' : 'btn-secondary'
-      "
-      (click)="onClickAutoFilterToggle(auto.key)"
-      role="button"
-      aria-pressed="true"
-    >
-      {{ auto.key }}
-    </div>
+      (input)="onChangeLevelFilter($event.target.value)"
+      class="form-control"
+    />
   </div>
-
-<div class="row">
+</form>
+<div id="equipmentCards" class="row">
   <div *ngFor="let equip of equipment">
     <div
-      *ngIf="!isFiltered(equip.slotType) && meetsRequirements(equip) && meetsAutos(equip.autos)"
+      *ngIf="(!isFiltered(equip.slotType) && meetsRequirements(equip)) || (meetsAffectedByFilters(equip.autos, equip.statusImmunities, equip.abilityModifiers) && meetsRequirements(equip)) "
       class="card text-black bg-dark border-primary ml-3 mb-3"
       style="min-width: 18rem;"
     >
@@ -194,7 +265,9 @@
                   | keyvalue: asIsOrder
               "
             >
-              <div *ngIf="statusImmunity.value">{{ statusImmunity.key }}</div>
+              <div *ngIf="statusImmunity.value">
+                {{ statusImmunity.key }}
+              </div>
             </div>
           </li>
           <li *ngIf="equip.empowerElements" class="list-group-item">
@@ -205,7 +278,9 @@
                   | keyvalue: asIsOrder
               "
             >
-              <div *ngIf="empowerElement.value">{{ empowerElement.key }}</div>
+              <div *ngIf="empowerElement.value">
+                {{ empowerElement.key }}
+              </div>
             </div>
           </li>
           <li *ngIf="equip.elementalDefenses" class="list-group-item">
